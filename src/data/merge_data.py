@@ -29,6 +29,10 @@ def merge_and_save_data(article_data_file, finance_data_file, output_file):
     merged_entry = {
         'date': finance_data['timestamp'],
         'BTC Price': finance_data['BTC Price'],
+        'BTC High': finance_data['BTC High'],            # Highest price of Bitcoin during the trading day
+        'BTC Low': finance_data['BTC Low'],             # Lowest price of Bitcoin during the trading day
+        'BTC Open': finance_data['BTC Open'],            # Opening price of Bitcoin
+        'BTC Previous Close': finance_data['BTC Previous Close'], # Previous closing price of Bitcoin
         'Crude Oil Price': finance_data['Crude Oil Price'],
         'Gold Price': finance_data['Gold Price'],
         'ETH Price': finance_data['ETH Price'],
@@ -43,8 +47,8 @@ def merge_and_save_data(article_data_file, finance_data_file, output_file):
     
     # Define the columns for the CSV file
     columns = [
-        'date', 'BTC Price', 'Crude Oil Price', 'Gold Price', 'ETH Price',
-        'MSFT Price', 'JPM Price', 'JNJ Price', 'XOM Price',
+        'date', 'BTC Price', 'BTC High', 'BTC Low', 'BTC Open', 'BTC Previous Close',
+        'Crude Oil Price', 'Gold Price', 'ETH Price', 'MSFT Price', 'JPM Price', 'JNJ Price', 'XOM Price',
         'Sentiment Article 1', 'Sentiment Article 2', 'Sentiment Article 3'
     ]
     

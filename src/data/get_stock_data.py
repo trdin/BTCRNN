@@ -50,6 +50,10 @@ def main():
     stock_data = {
         'timestamp': timestamp,
         'BTC Price': btc_price['c'],
+        'BTC High': btc_price['h'],            # Highest price of Bitcoin during the trading day
+        'BTC Low': btc_price['l'],             # Lowest price of Bitcoin during the trading day
+        'BTC Open': btc_price['o'],            # Opening price of Bitcoin
+        'BTC Previous Close': btc_price['pc'],
         'Crude Oil Price': crude_oil_price['c'],
         'Gold Price': gold_price['c'],
         'ETH Price': eth_price['c'],
