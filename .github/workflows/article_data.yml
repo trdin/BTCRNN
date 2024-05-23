@@ -2,7 +2,7 @@ name: Fetch and Process Data
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Run every 30 minutes
+    - cron: '0 */5 * * *'  # Run every 5 hours
   workflow_dispatch:
 
 permissions:
@@ -69,11 +69,11 @@ jobs:
         run: |
           poetry run dvc unprotect data
 
-      - name: Fetch stock data
-        run: poetry run get_stock_data
+      - name: Fetch article data
+        run: poetry run get_raw_article
               
-      - name: Merge processed data
-        run: poetry run merge_data
+      - name: Prepare article data
+        run: poetry run preprocess_article
 
       - name: Add data to DVC
         run: |
