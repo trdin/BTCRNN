@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   
-  bike_data:
+  finance_data:
     runs-on: ubuntu-latest
 
     permissions:
