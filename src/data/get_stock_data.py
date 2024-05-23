@@ -3,19 +3,38 @@ import os
 import json
 import src.enviorment_variables as env
 from datetime import datetime
+import time
+
+def get_price(client, symbol):
+    retry_count = 0
+    max_retries = 3
+    while retry_count < max_retries:
+        price = client.quote(symbol)
+        print(price)
+        if price['c'] != 0:  # Check if the price is not zero
+            return price
+        else:
+            print("retlying...")
+            retry_count += 1
+            time.sleep(5)  # Wait for 5 seconds before retrying
+    return None  # Return None if max retries reached
 
 def main():
     finnhub_client = finnhub.Client(api_key=env.finnhub_api_key)
 
-    # Get the stock prices for different companies and commodities
-    btc_price = finnhub_client.quote('BTC-USD')  # Bitcoin price
-    crude_oil_price = finnhub_client.quote('CL=F')  # Crude oil price
-    gold_price = finnhub_client.quote('GC=F')  # Gold price
-    eth_price = finnhub_client.quote('ETH-USD')  # Ethereum price
-    msft_price = finnhub_client.quote('MSFT')  # Microsoft stock price # technology
-    jpm_price = finnhub_client.quote('JPM')  # JPMorgan Chase stock price # finance
-    jnj_price = finnhub_client.quote('JNJ')  # Johnson & Johnson stock price # healthcare
-    xom_price = finnhub_client.quote('XOM')  # Exxon Mobil stock price # energy
+    btc_price = get_price(finnhub_client, 'BTC-USD')  # Get the price of Bitcoin
+    crude_oil_price = get_price(finnhub_client, 'CL=F')  # Get the price of Crude Oil
+    gold_price = get_price(finnhub_client, 'GC=F')  # Get the price of Gold
+    eth_price = get_price(finnhub_client, 'ETH-USD')  # Get the price of Ethereum
+    msft_price = get_price(finnhub_client, 'MSFT')  # Get the price of Microsoft (technology)
+    jpm_price = get_price(finnhub_client, 'JPM')  # Get the price of JPMorgan Chase (finance)
+    jnj_price = get_price(finnhub_client, 'JNJ')  # Get the price of Johnson & Johnson (healthcare)
+    xom_price = get_price(finnhub_client, 'XOM')  # Get the price of Exxon Mobil (energy)
+
+    # Check if any price is still None
+    if any(price is None for price in [btc_price, crude_oil_price, gold_price, eth_price, msft_price, jpm_price, jnj_price, xom_price]):
+        print("Failed to fetch prices for one or more symbols. Please check your API key or try again later.")
+        return
 
     # Create the directory if it does not exist
     os.makedirs('data/preprocessed/finance', exist_ok=True)
