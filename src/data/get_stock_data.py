@@ -16,7 +16,7 @@ def get_price(client, symbol):
         else:
             print("retlying...")
             retry_count += 1
-            time.sleep(5)  # Wait for 5 seconds before retrying
+            time.sleep(60)  # Wait for 60 seconds before retrying, to reset the limit
     return None  # Return None if max retries reached
 
 def main():
