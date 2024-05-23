@@ -1,4 +1,4 @@
-name: Fetch and Process Data
+name: Fetch and Process Finance Data
 
 on:
   schedule:
