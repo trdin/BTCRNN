@@ -2,7 +2,7 @@ import finnhub
 import os
 import json
 import src.enviorment_variables as env
-from datetime import datetime
+from datetime import datetime, timezone
 import time
 
 def get_price(client, symbol):
@@ -40,7 +40,7 @@ def main():
     os.makedirs('data/preprocessed/finance', exist_ok=True)
 
     # Get the current timestamp
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     timestamp_filename = timestamp.replace(" ", "_").replace(":", "-")
 
     # Define the JSON file path

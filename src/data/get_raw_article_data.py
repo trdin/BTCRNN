@@ -2,7 +2,7 @@ import os
 import json
 import yfinance as yf
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 
 def main():
@@ -52,7 +52,7 @@ def main():
     # Create the directory if it doesn't exist
     os.makedirs('data/raw', exist_ok=True)
 
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     timestamp_filename = timestamp.replace(" ", "_").replace(":", "-")
 
 
