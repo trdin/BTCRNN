@@ -8,6 +8,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: data-processing
+  cancel-in-progress: false
+
 env:
   FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
 

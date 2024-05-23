@@ -5,6 +5,11 @@ on:
     - cron: '0 */5 * * *'  # Run every 5 hours
   workflow_dispatch:
 
+
+concurrency:
+    group: data-processing
+    cancel-in-progress: false
+
 permissions:
   contents: read
 
