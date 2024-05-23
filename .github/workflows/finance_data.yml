@@ -8,6 +8,9 @@ on:
 permissions:
   contents: read
 
+env:
+  FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+
 jobs:
   
   finance_data:
