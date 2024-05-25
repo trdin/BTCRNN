@@ -1,7 +1,7 @@
 {
-  "id": "f9baa822-c36c-4b9f-a8c8-454cf00204d8",
+  "id": "8a286092-6475-408a-847d-983529113c15",
   "name": null,
-  "timestamp": "2024-05-25T22:20:13.318994",
+  "timestamp": "2024-05-25T20:40:12.999516",
   "metadata": {
     "metric_presets": [
       "DataDriftPreset"
@@ -140,21 +140,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 1.0,
-                "BTC Low": 0.4295894743849761,
-                "BTC Open": 0.8637075579471548,
-                "BTC Previous Close": 0.8654263244606454,
-                "BTC Price": 0.22569121670470663,
-                "Crude Oil Price": -0.24534022288940271,
-                "ETH Price": 0.6750755712544863,
-                "Gold Price": 0.09751863650934951,
-                "JNJ Price": 0.3319169841877147,
-                "JPM Price": -0.40741868353903127,
-                "MSFT Price": -0.2578120599636599,
+                "BTC High": 0.9999999999999999,
+                "BTC Low": 0.42958947438497597,
+                "BTC Open": 0.8637075579471528,
+                "BTC Previous Close": 0.8654263244606447,
+                "BTC Price": 0.2256912167047068,
+                "Crude Oil Price": -0.24534022288940252,
+                "ETH Price": 0.6750755712544854,
+                "Gold Price": 0.09751863650934979,
+                "JNJ Price": 0.3319169841877134,
+                "JPM Price": -0.40741868353903143,
+                "MSFT Price": -0.25781205996366036,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.26285419531248466
+                "XOM Price": -0.26285419531248433
               }
             },
             "reference": {
@@ -221,20 +221,20 @@
               },
               "correlations": {
                 "BTC High": 1.0,
-                "BTC Low": 0.4335078178061801,
-                "BTC Open": 0.8637771096223815,
-                "BTC Previous Close": 0.8655022720196682,
-                "BTC Price": 0.22559906038596894,
-                "Crude Oil Price": -0.24669032764134807,
-                "ETH Price": 0.6750993796879214,
-                "Gold Price": 0.09802036441618239,
-                "JNJ Price": 0.3339124151097822,
-                "JPM Price": -0.4095033547127479,
-                "MSFT Price": -0.2593154001728965,
+                "BTC Low": 0.4335078178061797,
+                "BTC Open": 0.8637771096223814,
+                "BTC Previous Close": 0.8655022720196668,
+                "BTC Price": 0.22559906038596814,
+                "Crude Oil Price": -0.24669032764134863,
+                "ETH Price": 0.6750993796879201,
+                "Gold Price": 0.09802036441618248,
+                "JNJ Price": 0.3339124151097811,
+                "JPM Price": -0.40950335471274735,
+                "MSFT Price": -0.2593154001728962,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.26264932516564177
+                "XOM Price": -0.26264932516564143
               }
             },
             "scatter": {
@@ -724,21 +724,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.4295894743849761,
+                "BTC High": 0.42958947438497597,
                 "BTC Low": 1.0,
-                "BTC Open": 0.5636386461661196,
-                "BTC Previous Close": 0.5620597070744108,
-                "BTC Price": 0.556247195124671,
-                "Crude Oil Price": -0.1887058485792511,
-                "ETH Price": -0.08158468226920548,
-                "Gold Price": 0.20813241117754552,
-                "JNJ Price": 0.22623918112075062,
-                "JPM Price": -0.24185995074458522,
-                "MSFT Price": -0.20012119132918313,
+                "BTC Open": 0.5636386461661185,
+                "BTC Previous Close": 0.562059707074411,
+                "BTC Price": 0.5562471951246717,
+                "Crude Oil Price": -0.18870584857925057,
+                "ETH Price": -0.08158468226920573,
+                "Gold Price": 0.2081324111775453,
+                "JNJ Price": 0.22623918112075006,
+                "JPM Price": -0.24185995074458586,
+                "MSFT Price": -0.20012119132918377,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.008640549852285647
+                "XOM Price": -0.008640549852285654
               }
             },
             "reference": {
@@ -808,21 +808,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.4335078178061801,
+                "BTC High": 0.43350781780617975,
                 "BTC Low": 0.9999999999999999,
-                "BTC Open": 0.5714066068216591,
-                "BTC Previous Close": 0.5698886318563633,
-                "BTC Price": 0.5509053170862506,
-                "Crude Oil Price": -0.20277495882745164,
-                "ETH Price": -0.08806349899585844,
-                "Gold Price": 0.21718460053953342,
-                "JNJ Price": 0.24314693668931944,
-                "JPM Price": -0.25836960570457446,
-                "MSFT Price": -0.2151256444730796,
+                "BTC Open": 0.571406606821657,
+                "BTC Previous Close": 0.5698886318563643,
+                "BTC Price": 0.5509053170862498,
+                "Crude Oil Price": -0.20277495882745192,
+                "ETH Price": -0.08806349899585812,
+                "Gold Price": 0.21718460053953392,
+                "JNJ Price": 0.24314693668931917,
+                "JPM Price": -0.25836960570457396,
+                "MSFT Price": -0.21512564447308016,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.004097372699879095
+                "XOM Price": -0.004097372699879184
               }
             },
             "scatter": {
@@ -1310,21 +1310,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.8637075579471549,
-                "BTC Low": 0.5636386461661195,
-                "BTC Open": 0.9999999999999999,
-                "BTC Previous Close": 0.999962245481596,
-                "BTC Price": 0.004001991023154345,
-                "Crude Oil Price": -0.5910826850687181,
-                "ETH Price": 0.5188427424472414,
-                "Gold Price": 0.1868949024878477,
-                "JNJ Price": 0.6550132661160802,
-                "JPM Price": -0.6942658062275427,
-                "MSFT Price": -0.5944953327588948,
+                "BTC High": 0.8637075579471528,
+                "BTC Low": 0.5636386461661185,
+                "BTC Open": 1.0,
+                "BTC Previous Close": 0.9999622454815947,
+                "BTC Price": 0.004001991023154591,
+                "Crude Oil Price": -0.5910826850687186,
+                "ETH Price": 0.5188427424472413,
+                "Gold Price": 0.18689490248784774,
+                "JNJ Price": 0.6550132661160784,
+                "JPM Price": -0.6942658062275416,
+                "MSFT Price": -0.5944953327588955,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": 0.045260386084005205
+                "XOM Price": 0.04526038608400497
               }
             },
             "reference": {
@@ -1392,21 +1392,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.8637771096223815,
-                "BTC Low": 0.5714066068216592,
-                "BTC Open": 1.0,
-                "BTC Previous Close": 0.9999623689221833,
-                "BTC Price": 0.004108665028992878,
-                "Crude Oil Price": -0.5923536570489478,
-                "ETH Price": 0.5191458198853228,
-                "Gold Price": 0.1869870271350351,
-                "JNJ Price": 0.6570100201302895,
-                "JPM Price": -0.6961971939201698,
-                "MSFT Price": -0.595943606548923,
+                "BTC High": 0.8637771096223814,
+                "BTC Low": 0.571406606821657,
+                "BTC Open": 0.9999999999999999,
+                "BTC Previous Close": 0.9999623689221826,
+                "BTC Price": 0.004108665028993248,
+                "Crude Oil Price": -0.5923536570489487,
+                "ETH Price": 0.5191458198853225,
+                "Gold Price": 0.1869870271350348,
+                "JNJ Price": 0.65701002013029,
+                "JPM Price": -0.6961971939201701,
+                "MSFT Price": -0.5959436065489236,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": 0.045251141572300514
+                "XOM Price": 0.04525114157230051
               }
             },
             "scatter": {
@@ -1894,21 +1894,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.8654263244606454,
-                "BTC Low": 0.5620597070744108,
-                "BTC Open": 0.999962245481596,
+                "BTC High": 0.8654263244606448,
+                "BTC Low": 0.562059707074411,
+                "BTC Open": 0.9999622454815947,
                 "BTC Previous Close": 1.0,
-                "BTC Price": 0.004469246048555633,
+                "BTC Price": 0.004469246048555926,
                 "Crude Oil Price": -0.5895028904204523,
-                "ETH Price": 0.5196206135466812,
-                "Gold Price": 0.18555370054190123,
-                "JNJ Price": 0.652949564605086,
-                "JPM Price": -0.6924954796039938,
-                "MSFT Price": -0.5925565638152511,
+                "ETH Price": 0.5196206135466808,
+                "Gold Price": 0.18555370054190173,
+                "JNJ Price": 0.6529495646050871,
+                "JPM Price": -0.692495479603995,
+                "MSFT Price": -0.5925565638152542,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": 0.04361918649766274
+                "XOM Price": 0.043619186497662915
               }
             },
             "reference": {
@@ -1976,21 +1976,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.8655022720196681,
-                "BTC Low": 0.5698886318563633,
-                "BTC Open": 0.9999623689221833,
-                "BTC Previous Close": 0.9999999999999999,
-                "BTC Price": 0.004623924575958529,
-                "Crude Oil Price": -0.590737217518938,
-                "ETH Price": 0.5199404934310327,
-                "Gold Price": 0.18562663493769255,
-                "JNJ Price": 0.654900604750979,
-                "JPM Price": -0.6943843798437178,
-                "MSFT Price": -0.5939647191489845,
+                "BTC High": 0.8655022720196669,
+                "BTC Low": 0.5698886318563642,
+                "BTC Open": 0.9999623689221827,
+                "BTC Previous Close": 1.0,
+                "BTC Price": 0.004623924575958067,
+                "Crude Oil Price": -0.5907372175189387,
+                "ETH Price": 0.519940493431032,
+                "Gold Price": 0.1856266349376925,
+                "JNJ Price": 0.6549006047509803,
+                "JPM Price": -0.6943843798437167,
+                "MSFT Price": -0.5939647191489851,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": 0.043595253075283745
+                "XOM Price": 0.04359525307528383
               }
             },
             "scatter": {
@@ -2478,21 +2478,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.22569121670470663,
-                "BTC Low": 0.556247195124671,
-                "BTC Open": 0.004001991023154345,
-                "BTC Previous Close": 0.004469246048555633,
-                "BTC Price": 0.9999999999999998,
-                "Crude Oil Price": 0.5084653674561582,
-                "ETH Price": -0.15713059319649247,
-                "Gold Price": 0.10958560615420872,
-                "JNJ Price": -0.42661095474382926,
-                "JPM Price": 0.4024915023409069,
-                "MSFT Price": 0.5204306603496882,
+                "BTC High": 0.2256912167047068,
+                "BTC Low": 0.5562471951246717,
+                "BTC Open": 0.004001991023154591,
+                "BTC Previous Close": 0.004469246048555926,
+                "BTC Price": 1.0,
+                "Crude Oil Price": 0.5084653674561587,
+                "ETH Price": -0.15713059319649222,
+                "Gold Price": 0.10958560615420906,
+                "JNJ Price": -0.42661095474383076,
+                "JPM Price": 0.40249150234090875,
+                "MSFT Price": 0.5204306603496902,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.5451380799182585
+                "XOM Price": -0.5451380799182616
               }
             },
             "reference": {
@@ -2560,21 +2560,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.22559906038596894,
-                "BTC Low": 0.5509053170862507,
-                "BTC Open": 0.004108665028992877,
-                "BTC Previous Close": 0.004623924575958529,
+                "BTC High": 0.2255990603859681,
+                "BTC Low": 0.5509053170862498,
+                "BTC Open": 0.004108665028993249,
+                "BTC Previous Close": 0.004623924575958067,
                 "BTC Price": 1.0,
-                "Crude Oil Price": 0.505566440924459,
-                "ETH Price": -0.16088001057334927,
-                "Gold Price": 0.11355353038214087,
-                "JNJ Price": -0.42241984806779725,
-                "JPM Price": 0.39833994643962223,
-                "MSFT Price": 0.5173720171028696,
+                "Crude Oil Price": 0.5055664409244605,
+                "ETH Price": -0.16088001057334902,
+                "Gold Price": 0.11355353038214072,
+                "JNJ Price": -0.42241984806779714,
+                "JPM Price": 0.3983399464396221,
+                "MSFT Price": 0.51737201710287,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.5450691984175281
+                "XOM Price": -0.5450691984175287
               }
             },
             "scatter": {
@@ -3060,17 +3060,17 @@
                 ]
               },
               "correlations": {
-                "BTC High": -0.24534022288940271,
-                "BTC Low": -0.1887058485792511,
-                "BTC Open": -0.5910826850687182,
+                "BTC High": -0.24534022288940252,
+                "BTC Low": -0.18870584857925057,
+                "BTC Open": -0.5910826850687186,
                 "BTC Previous Close": -0.5895028904204523,
-                "BTC Price": 0.5084653674561583,
-                "Crude Oil Price": 0.9999999999999999,
-                "ETH Price": -0.21489984153033595,
-                "Gold Price": -0.04798596813922912,
-                "JNJ Price": -0.9287196812078735,
-                "JPM Price": 0.9249755161681683,
-                "MSFT Price": 0.9363217974818019,
+                "BTC Price": 0.5084653674561586,
+                "Crude Oil Price": 1.0,
+                "ETH Price": -0.2148998415303355,
+                "Gold Price": -0.047985968139229146,
+                "JNJ Price": -0.928719681207872,
+                "JPM Price": 0.9249755161681682,
+                "MSFT Price": 0.9363217974818043,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
@@ -3140,21 +3140,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": -0.2466903276413481,
-                "BTC Low": -0.20277495882745167,
-                "BTC Open": -0.5923536570489477,
-                "BTC Previous Close": -0.590737217518938,
-                "BTC Price": 0.505566440924459,
-                "Crude Oil Price": 1.0,
-                "ETH Price": -0.2176747379031595,
-                "Gold Price": -0.0456389694437324,
-                "JNJ Price": -0.9284084697448644,
-                "JPM Price": 0.9246271998475473,
-                "MSFT Price": 0.9360238819073562,
+                "BTC High": -0.2466903276413486,
+                "BTC Low": -0.20277495882745192,
+                "BTC Open": -0.5923536570489487,
+                "BTC Previous Close": -0.5907372175189388,
+                "BTC Price": 0.5055664409244605,
+                "Crude Oil Price": 0.9999999999999999,
+                "ETH Price": -0.21767473790315997,
+                "Gold Price": -0.04563896944373262,
+                "JNJ Price": -0.9284084697448663,
+                "JPM Price": 0.9246271998475478,
+                "MSFT Price": 0.9360238819073564,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.5025222424610257
+                "XOM Price": -0.5025222424610287
               }
             },
             "scatter": {
@@ -3638,21 +3638,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.6750755712544863,
-                "BTC Low": -0.0815846822692055,
-                "BTC Open": 0.5188427424472414,
-                "BTC Previous Close": 0.5196206135466812,
-                "BTC Price": -0.15713059319649245,
-                "Crude Oil Price": -0.21489984153033592,
+                "BTC High": 0.6750755712544853,
+                "BTC Low": -0.08158468226920572,
+                "BTC Open": 0.5188427424472413,
+                "BTC Previous Close": 0.5196206135466808,
+                "BTC Price": -0.15713059319649225,
+                "Crude Oil Price": -0.2148998415303355,
                 "ETH Price": 1.0,
-                "Gold Price": -0.09646985277135355,
-                "JNJ Price": 0.2261536262178888,
-                "JPM Price": -0.29535901253818914,
-                "MSFT Price": -0.21128179744658637,
+                "Gold Price": -0.09646985277135335,
+                "JNJ Price": 0.22615362621788834,
+                "JPM Price": -0.29535901253818925,
+                "MSFT Price": -0.21128179744658718,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.16044279996632052
+                "XOM Price": -0.1604427999663209
               }
             },
             "reference": {
@@ -3716,21 +3716,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.6750993796879214,
-                "BTC Low": -0.08806349899585844,
-                "BTC Open": 0.5191458198853228,
-                "BTC Previous Close": 0.5199404934310327,
-                "BTC Price": -0.16088001057334927,
-                "Crude Oil Price": -0.21767473790315947,
-                "ETH Price": 0.9999999999999999,
-                "Gold Price": -0.095389431815323,
-                "JNJ Price": 0.22956485345686073,
-                "JPM Price": -0.2988274783749545,
-                "MSFT Price": -0.2142449477827595,
+                "BTC High": 0.6750993796879201,
+                "BTC Low": -0.08806349899585814,
+                "BTC Open": 0.5191458198853225,
+                "BTC Previous Close": 0.519940493431032,
+                "BTC Price": -0.16088001057334902,
+                "Crude Oil Price": -0.21767473790315997,
+                "ETH Price": 1.0,
+                "Gold Price": -0.09538943181532296,
+                "JNJ Price": 0.22956485345686065,
+                "JPM Price": -0.2988274783749534,
+                "MSFT Price": -0.2142449477827589,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.1596757229438556
+                "XOM Price": -0.1596757229438548
               }
             },
             "scatter": {
@@ -4226,21 +4226,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.09751863650934951,
-                "BTC Low": 0.20813241117754555,
-                "BTC Open": 0.18689490248784768,
-                "BTC Previous Close": 0.1855537005419012,
-                "BTC Price": 0.10958560615420872,
-                "Crude Oil Price": -0.04798596813922912,
-                "ETH Price": -0.09646985277135355,
+                "BTC High": 0.09751863650934979,
+                "BTC Low": 0.20813241117754533,
+                "BTC Open": 0.18689490248784774,
+                "BTC Previous Close": 0.18555370054190173,
+                "BTC Price": 0.10958560615420906,
+                "Crude Oil Price": -0.047985968139229146,
+                "ETH Price": -0.09646985277135335,
                 "Gold Price": 1.0,
-                "JNJ Price": 0.21485836333028513,
-                "JPM Price": -0.20599525201859792,
-                "MSFT Price": -0.18239008364666523,
+                "JNJ Price": 0.2148583633302854,
+                "JPM Price": -0.2059952520185986,
+                "MSFT Price": -0.1823900836466658,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": 0.055310212834564755
+                "XOM Price": 0.05531021283456485
               }
             },
             "reference": {
@@ -4316,21 +4316,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.09802036441618239,
-                "BTC Low": 0.21718460053953345,
-                "BTC Open": 0.1869870271350351,
-                "BTC Previous Close": 0.18562663493769255,
-                "BTC Price": 0.11355353038214087,
-                "Crude Oil Price": -0.0456389694437324,
-                "ETH Price": -0.09538943181532299,
-                "Gold Price": 0.9999999999999998,
-                "JNJ Price": 0.21274022184578306,
-                "JPM Price": -0.20391822141659804,
-                "MSFT Price": -0.18033613826864642,
+                "BTC High": 0.09802036441618248,
+                "BTC Low": 0.21718460053953387,
+                "BTC Open": 0.1869870271350348,
+                "BTC Previous Close": 0.1856266349376925,
+                "BTC Price": 0.11355353038214074,
+                "Crude Oil Price": -0.04563896944373262,
+                "ETH Price": -0.09538943181532296,
+                "Gold Price": 1.0,
+                "JNJ Price": 0.21274022184578326,
+                "JPM Price": -0.20391822141659802,
+                "MSFT Price": -0.18033613826864664,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": 0.05432381337346961
+                "XOM Price": 0.05432381337346971
               }
             },
             "scatter": {
@@ -4816,21 +4816,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.3319169841877147,
-                "BTC Low": 0.22623918112075062,
-                "BTC Open": 0.6550132661160802,
-                "BTC Previous Close": 0.652949564605086,
-                "BTC Price": -0.42661095474382926,
-                "Crude Oil Price": -0.9287196812078735,
-                "ETH Price": 0.2261536262178888,
-                "Gold Price": 0.2148583633302851,
-                "JNJ Price": 0.9999999999999998,
-                "JPM Price": -0.9872675905122227,
-                "MSFT Price": -0.934668611300018,
+                "BTC High": 0.33191698418771337,
+                "BTC Low": 0.22623918112075006,
+                "BTC Open": 0.6550132661160782,
+                "BTC Previous Close": 0.6529495646050871,
+                "BTC Price": -0.4266109547438307,
+                "Crude Oil Price": -0.928719681207872,
+                "ETH Price": 0.22615362621788834,
+                "Gold Price": 0.2148583633302854,
+                "JNJ Price": 1.0,
+                "JPM Price": -0.9872675905122238,
+                "MSFT Price": -0.9346686113000215,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": 0.3751592558822561
+                "XOM Price": 0.37515925588225774
               }
             },
             "reference": {
@@ -4896,21 +4896,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": 0.3339124151097822,
-                "BTC Low": 0.24314693668931947,
-                "BTC Open": 0.6570100201302896,
-                "BTC Previous Close": 0.654900604750979,
-                "BTC Price": -0.42241984806779725,
-                "Crude Oil Price": -0.9284084697448644,
-                "ETH Price": 0.22956485345686076,
-                "Gold Price": 0.21274022184578306,
+                "BTC High": 0.33391241510978115,
+                "BTC Low": 0.2431469366893192,
+                "BTC Open": 0.65701002013029,
+                "BTC Previous Close": 0.6549006047509803,
+                "BTC Price": -0.4224198480677972,
+                "Crude Oil Price": -0.9284084697448662,
+                "ETH Price": 0.22956485345686062,
+                "Gold Price": 0.21274022184578326,
                 "JNJ Price": 1.0,
-                "JPM Price": -0.9871967893081636,
-                "MSFT Price": -0.9343275138204045,
+                "JPM Price": -0.9871967893081618,
+                "MSFT Price": -0.9343275138204026,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": 0.37424488887682783
+                "XOM Price": 0.3742448888768294
               }
             },
             "scatter": {
@@ -5398,21 +5398,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": -0.40741868353903127,
-                "BTC Low": -0.24185995074458522,
-                "BTC Open": -0.6942658062275426,
-                "BTC Previous Close": -0.6924954796039937,
-                "BTC Price": 0.40249150234090697,
-                "Crude Oil Price": 0.9249755161681683,
-                "ETH Price": -0.29535901253818914,
-                "Gold Price": -0.20599525201859792,
-                "JNJ Price": -0.9872675905122228,
-                "JPM Price": 1.0,
-                "MSFT Price": 0.930188324348067,
+                "BTC High": -0.4074186835390314,
+                "BTC Low": -0.24185995074458586,
+                "BTC Open": -0.6942658062275416,
+                "BTC Previous Close": -0.6924954796039949,
+                "BTC Price": 0.40249150234090875,
+                "Crude Oil Price": 0.9249755161681681,
+                "ETH Price": -0.2953590125381893,
+                "Gold Price": -0.20599525201859864,
+                "JNJ Price": -0.9872675905122238,
+                "JPM Price": 0.9999999999999999,
+                "MSFT Price": 0.9301883243480676,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.3045680784336404
+                "XOM Price": -0.3045680784336409
               }
             },
             "reference": {
@@ -5480,21 +5480,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": -0.40950335471274796,
-                "BTC Low": -0.25836960570457446,
-                "BTC Open": -0.6961971939201699,
-                "BTC Previous Close": -0.6943843798437178,
-                "BTC Price": 0.3983399464396223,
-                "Crude Oil Price": 0.9246271998475473,
-                "ETH Price": -0.2988274783749545,
+                "BTC High": -0.40950335471274735,
+                "BTC Low": -0.25836960570457396,
+                "BTC Open": -0.6961971939201701,
+                "BTC Previous Close": -0.6943843798437167,
+                "BTC Price": 0.3983399464396222,
+                "Crude Oil Price": 0.9246271998475478,
+                "ETH Price": -0.29882747837495344,
                 "Gold Price": -0.20391822141659802,
-                "JNJ Price": -0.9871967893081636,
+                "JNJ Price": -0.9871967893081618,
                 "JPM Price": 1.0,
-                "MSFT Price": 0.9298184096574899,
+                "MSFT Price": 0.929818409657491,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.3034185597709467
+                "XOM Price": -0.3034185597709466
               }
             },
             "scatter": {
@@ -5982,21 +5982,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": -0.2578120599636599,
-                "BTC Low": -0.20012119132918313,
-                "BTC Open": -0.5944953327588948,
-                "BTC Previous Close": -0.592556563815251,
-                "BTC Price": 0.5204306603496881,
-                "Crude Oil Price": 0.9363217974818019,
-                "ETH Price": -0.21128179744658634,
-                "Gold Price": -0.18239008364666523,
-                "JNJ Price": -0.934668611300018,
-                "JPM Price": 0.930188324348067,
+                "BTC High": -0.25781205996366036,
+                "BTC Low": -0.20012119132918377,
+                "BTC Open": -0.5944953327588957,
+                "BTC Previous Close": -0.5925565638152542,
+                "BTC Price": 0.5204306603496901,
+                "Crude Oil Price": 0.9363217974818043,
+                "ETH Price": -0.21128179744658715,
+                "Gold Price": -0.18239008364666578,
+                "JNJ Price": -0.9346686113000217,
+                "JPM Price": 0.9301883243480676,
                 "MSFT Price": 1.0,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.6016389916730477
+                "XOM Price": -0.6016389916730485
               }
             },
             "reference": {
@@ -6064,21 +6064,21 @@
                 ]
               },
               "correlations": {
-                "BTC High": -0.2593154001728965,
-                "BTC Low": -0.2151256444730796,
-                "BTC Open": -0.595943606548923,
-                "BTC Previous Close": -0.5939647191489845,
-                "BTC Price": 0.5173720171028695,
-                "Crude Oil Price": 0.9360238819073562,
-                "ETH Price": -0.2142449477827595,
-                "Gold Price": -0.18033613826864642,
-                "JNJ Price": -0.9343275138204044,
-                "JPM Price": 0.9298184096574899,
+                "BTC High": -0.25931540017289617,
+                "BTC Low": -0.21512564447308016,
+                "BTC Open": -0.5959436065489235,
+                "BTC Previous Close": -0.5939647191489851,
+                "BTC Price": 0.51737201710287,
+                "Crude Oil Price": 0.9360238819073564,
+                "ETH Price": -0.2142449477827589,
+                "Gold Price": -0.18033613826864667,
+                "JNJ Price": -0.9343275138204026,
+                "JPM Price": 0.929818409657491,
                 "MSFT Price": 1.0,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
-                "XOM Price": -0.6013934981590907
+                "XOM Price": -0.6013934981590922
               }
             },
             "scatter": {
@@ -8190,17 +8190,17 @@
                 ]
               },
               "correlations": {
-                "BTC High": -0.26285419531248466,
-                "BTC Low": -0.008640549852285646,
-                "BTC Open": 0.045260386084005205,
-                "BTC Previous Close": 0.043619186497662735,
-                "BTC Price": -0.5451380799182585,
+                "BTC High": -0.2628541953124843,
+                "BTC Low": -0.008640549852285654,
+                "BTC Open": 0.045260386084004976,
+                "BTC Previous Close": 0.043619186497662915,
+                "BTC Price": -0.5451380799182616,
                 "Crude Oil Price": -0.5030863968763964,
-                "ETH Price": -0.16044279996632052,
-                "Gold Price": 0.05531021283456475,
-                "JNJ Price": 0.37515925588225607,
-                "JPM Price": -0.3045680784336404,
-                "MSFT Price": -0.6016389916730478,
+                "ETH Price": -0.1604427999663209,
+                "Gold Price": 0.05531021283456486,
+                "JNJ Price": 0.37515925588225774,
+                "JPM Price": -0.30456807843364087,
+                "MSFT Price": -0.6016389916730485,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
@@ -8276,17 +8276,17 @@
                 ]
               },
               "correlations": {
-                "BTC High": -0.2626493251656417,
-                "BTC Low": -0.004097372699879094,
-                "BTC Open": 0.045251141572300514,
-                "BTC Previous Close": 0.043595253075283745,
-                "BTC Price": -0.5450691984175281,
-                "Crude Oil Price": -0.5025222424610257,
-                "ETH Price": -0.15967572294385557,
-                "Gold Price": 0.0543238133734696,
-                "JNJ Price": 0.3742448888768278,
-                "JPM Price": -0.30341855977094667,
-                "MSFT Price": -0.6013934981590907,
+                "BTC High": -0.26264932516564143,
+                "BTC Low": -0.004097372699879184,
+                "BTC Open": 0.04525114157230051,
+                "BTC Previous Close": 0.043595253075283835,
+                "BTC Price": -0.5450691984175285,
+                "Crude Oil Price": -0.5025222424610287,
+                "ETH Price": -0.15967572294385476,
+                "Gold Price": 0.05432381337346971,
+                "JNJ Price": 0.3742448888768294,
+                "JPM Price": -0.3034185597709466,
+                "MSFT Price": -0.6013934981590922,
                 "Sentiment Article 1": NaN,
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
@@ -9413,12 +9413,8 @@
     },
     "data_definition": {
       "columns": {
-        "BTC Low": {
-          "column_name": "BTC Low",
-          "column_type": "num"
-        },
-        "Crude Oil Price": {
-          "column_name": "Crude Oil Price",
+        "BTC Previous Close": {
+          "column_name": "BTC Previous Close",
           "column_type": "num"
         },
         "MSFT Price": {
@@ -9433,24 +9429,8 @@
           "column_name": "JNJ Price",
           "column_type": "num"
         },
-        "Gold Price": {
-          "column_name": "Gold Price",
-          "column_type": "num"
-        },
-        "BTC Previous Close": {
-          "column_name": "BTC Previous Close",
-          "column_type": "num"
-        },
-        "BTC Open": {
-          "column_name": "BTC Open",
-          "column_type": "num"
-        },
         "BTC Price": {
           "column_name": "BTC Price",
-          "column_type": "num"
-        },
-        "ETH Price": {
-          "column_name": "ETH Price",
           "column_type": "num"
         },
         "BTC High": {
@@ -9461,20 +9441,40 @@
           "column_name": "XOM Price",
           "column_type": "num"
         },
-        "Sentiment Article 2": {
-          "column_name": "Sentiment Article 2",
+        "Gold Price": {
+          "column_name": "Gold Price",
+          "column_type": "num"
+        },
+        "BTC Open": {
+          "column_name": "BTC Open",
+          "column_type": "num"
+        },
+        "BTC Low": {
+          "column_name": "BTC Low",
+          "column_type": "num"
+        },
+        "Crude Oil Price": {
+          "column_name": "Crude Oil Price",
+          "column_type": "num"
+        },
+        "ETH Price": {
+          "column_name": "ETH Price",
+          "column_type": "num"
+        },
+        "Sentiment Article 1": {
+          "column_name": "Sentiment Article 1",
           "column_type": "cat"
         },
         "Sentiment Article 3": {
           "column_name": "Sentiment Article 3",
           "column_type": "cat"
         },
-        "Sentiment Article 1": {
-          "column_name": "Sentiment Article 1",
-          "column_type": "cat"
-        },
         "date": {
           "column_name": "date",
+          "column_type": "cat"
+        },
+        "Sentiment Article 2": {
+          "column_name": "Sentiment Article 2",
           "column_type": "cat"
         }
       },
