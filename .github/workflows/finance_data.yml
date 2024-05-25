@@ -81,7 +81,25 @@ jobs:
               
       - name: Merge processed data
         run: poetry run merge_data
+      
 
+      - name: Reference data and Current data
+        run: |
+          cp data/processed/finance_full_data.csv data/processed/current_data.csv
+      
+      - name: Validate data
+        run: |
+            poetry run python gx/validate_data.py
+
+      - name: Test data
+        run: |
+            poetry run test_data
+          
+      - name: New refrenece data
+        run: |
+            cp data/processed/current_data.csv data/processed/reference_data.csv
+    
+      
       - name: Add data to DVC
         run: |
           poetry run dvc add data
