@@ -46,12 +46,13 @@ yfinance = "^0.2.40"
 beautifulsoup4 = "^4.12.3"
 transformers = "^4.41.1"
 torch = "^2.3.0"
-tensorflow-intel = "^2.16.1"
-
-[tool.poetry.group.dev.dependencies]
 pytest = "^8.1.1"
 black = "^24.4.0"
+
+[tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
+tensorflow-intel = "^2.16.1"
+
 
 
 
