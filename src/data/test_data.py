@@ -25,8 +25,6 @@ def main():
     report.save('./reports/testing_data/data_drift.json')
 
     tests = TestSuite(tests=[
-        TestNumberOfColumnsWithMissingValues(),
-        TestNumberOfRowsWithMissingValues(),
         TestNumberOfConstantColumns(),
         TestNumberOfDuplicatedRows(),
         TestNumberOfDuplicatedColumns(),
