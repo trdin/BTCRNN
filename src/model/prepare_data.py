@@ -20,8 +20,10 @@ def prepare_data(path_to_data):
 
     # Resample the data to hourly frequency and handle missing values
     all_data.set_index('date', inplace=True)
-    all_data = all_data.resample('15T').mean()
+    all_data = all_data.resample('20T').mean()
     all_data.reset_index(inplace=True)
+
+    print(all_data.head())
 
     print("\nMissing values before dropping NaNs:")
     print(all_data.isnull().sum())

@@ -3,8 +3,10 @@ import os
 import pandas as pd
 
 def split_train_test(data):
+
+    data_unique = data.drop_duplicates(subset='date')
     # Sort data by date (assuming there's a column named 'date')
-    data_sorted = data.sort_values(by='date')
+    data_sorted = data_unique.sort_values(by='date')
 
     # Calculate the index to split the data (10% for test)
     split_index = int(0.1 * len(data_sorted))
