@@ -2,7 +2,7 @@ name: Fetch and Process Finance Data
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Zaženi vsako uro
+    - cron: '*/20 * * * *'  # Run every 20 minutes
   workflow_dispatch:
 
 permissions:
