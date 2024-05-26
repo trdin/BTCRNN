@@ -1,7 +1,7 @@
 {
-  "id": "122152cb-e40b-423f-9d5e-9eee850fc835",
+  "id": "abe4851e-6fb2-48f4-9134-7eccbb140873",
   "name": null,
-  "timestamp": "2024-05-26T05:01:29.302766",
+  "timestamp": "2024-05-26T05:31:29.663676",
   "metadata": {
     "metric_presets": [
       "DataDriftPreset"
@@ -104,6 +104,88 @@
                   0,
                   52,
                   0,
+                  29,
+                  0,
+                  37,
+                  0,
+                  14
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  67966.8594,
+                  68232.54299,
+                  68498.22658,
+                  68763.91017,
+                  69029.59376,
+                  69295.27735,
+                  69560.96094,
+                  69826.64453,
+                  70092.32812,
+                  70358.01171,
+                  70623.6953
+                ],
+                "y": [
+                  0.0002723857391893546,
+                  0.0001485740395578298,
+                  7.42870197789149e-05,
+                  0.0,
+                  0.0012876416761678582,
+                  0.0007181078578628441,
+                  0.0,
+                  0.0009162065772732838,
+                  0.0,
+                  0.00034667275896826954
+                ]
+              },
+              "correlations": {
+                "BTC High": 1.0,
+                "BTC Low": 0.3810918545233487,
+                "BTC Open": 0.8624606211520294,
+                "BTC Previous Close": 0.8640646661915073,
+                "BTC Price": 0.22780755131484512,
+                "Crude Oil Price": -0.22228334429180255,
+                "ETH Price": 0.6746760806769381,
+                "Gold Price": 0.08863945140756031,
+                "JNJ Price": 0.29858159116427946,
+                "JPM Price": -0.37241577954207983,
+                "MSFT Price": -0.23231056251561763,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": -0.2665064106340392
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  67966.8594,
+                  68188.26239166666,
+                  68409.66538333334,
+                  68631.068375,
+                  68852.47136666666,
+                  69073.87435833334,
+                  69295.27735,
+                  69516.68034166667,
+                  69738.08333333334,
+                  69959.486325,
+                  70180.88931666667,
+                  70402.29230833334,
+                  70623.6953
+                ],
+                "y": [
+                  11,
+                  6,
+                  1,
+                  2,
+                  0,
+                  52,
+                  0,
                   28,
                   0,
                   37,
@@ -157,88 +239,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": -0.26635654752037274
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  67966.8594,
-                  68188.26239166666,
-                  68409.66538333334,
-                  68631.068375,
-                  68852.47136666666,
-                  69073.87435833334,
-                  69295.27735,
-                  69516.68034166667,
-                  69738.08333333334,
-                  69959.486325,
-                  70180.88931666667,
-                  70402.29230833334,
-                  70623.6953
-                ],
-                "y": [
-                  11,
-                  6,
-                  1,
-                  2,
-                  0,
-                  52,
-                  0,
-                  27,
-                  0,
-                  37,
-                  0,
-                  14
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  67966.8594,
-                  68232.54299,
-                  68498.22658,
-                  68763.91017,
-                  69029.59376,
-                  69295.27735,
-                  69560.96094,
-                  69826.64453,
-                  70092.32812,
-                  70358.01171,
-                  70623.6953
-                ],
-                "y": [
-                  0.0002760175490452127,
-                  0.00015055502675193422,
-                  7.527751337596711e-05,
-                  0.0,
-                  0.0013048102318500962,
-                  0.0006774976203837039,
-                  0.0,
-                  0.000928422664970261,
-                  0.0,
-                  0.0003512950624211798
-                ]
-              },
-              "correlations": {
-                "BTC High": 1.0,
-                "BTC Low": 0.38399454526511156,
-                "BTC Open": 0.8625641725614274,
-                "BTC Previous Close": 0.8641777485559303,
-                "BTC Price": 0.22760302601470697,
-                "Crude Oil Price": -0.22412000816932287,
-                "ETH Price": 0.6747073156633034,
-                "Gold Price": 0.08936859867578187,
-                "JNJ Price": 0.30118793712563774,
-                "JPM Price": -0.3751640262193232,
-                "MSFT Price": -0.23433040793867374,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": -0.26620459759886056
               }
             },
             "scatter": {
@@ -699,14 +699,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 68787.86434927359,
-                "y1": 70143.90106805976
+                "y0": 68790.64587296377,
+                "y1": 70142.22291908922
               }
             }
           },
@@ -719,6 +719,90 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  66356.9531,
+                  66558.54865384616,
+                  66760.14420769231,
+                  66961.73976153847,
+                  67163.33531538461,
+                  67364.93086923077,
+                  67566.52642307692,
+                  67768.12197692308,
+                  67969.71753076924,
+                  68171.3130846154,
+                  68372.90863846154,
+                  68574.5041923077,
+                  68776.09974615385,
+                  68977.6953
+                ],
+                "y": [
+                  26,
+                  78,
+                  5,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  29,
+                  0,
+                  14
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  66356.9531,
+                  66619.02732,
+                  66881.10154,
+                  67143.17576,
+                  67405.24998000001,
+                  67667.3242,
+                  67929.39842,
+                  68191.47264,
+                  68453.54686,
+                  68715.62108000001,
+                  68977.6953
+                ],
+                "y": [
+                  0.0008033079933977396,
+                  0.0019329598591132033,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0007279978690166609,
+                  0.000351447247111511
+                ]
+              },
+              "correlations": {
+                "BTC High": 0.3810918545233487,
+                "BTC Low": 0.9999999999999999,
+                "BTC Open": 0.46172522736784277,
+                "BTC Previous Close": 0.45922484855750045,
+                "BTC Price": 0.6330912837358271,
+                "Crude Oil Price": 0.005840259140757284,
+                "ETH Price": 0.010519623494819306,
+                "Gold Price": 0.08144855335740445,
+                "JNJ Price": -0.004427078365403384,
+                "JPM Price": -0.015931160795876236,
+                "MSFT Price": 0.006464606495417203,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": -0.07459254734944702
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -800,90 +884,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": -0.07230654312950507
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  66356.9531,
-                  66558.54865384616,
-                  66760.14420769231,
-                  66961.73976153847,
-                  67163.33531538461,
-                  67364.93086923077,
-                  67566.52642307692,
-                  67768.12197692308,
-                  67969.71753076924,
-                  68171.3130846154,
-                  68372.90863846154,
-                  68574.5041923077,
-                  68776.09974615385,
-                  68977.6953
-                ],
-                "y": [
-                  26,
-                  78,
-                  5,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  27,
-                  0,
-                  14
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  66356.9531,
-                  66619.02732,
-                  66881.10154,
-                  67143.17576,
-                  67405.24998000001,
-                  67667.3242,
-                  67929.39842,
-                  68191.47264,
-                  68453.54686,
-                  68715.62108000001,
-                  68977.6953
-                ],
-                "y": [
-                  0.0008140187666430427,
-                  0.0019587326572347128,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0006868283343550291,
-                  0.00035613321040633115
-                ]
-              },
-              "correlations": {
-                "BTC High": 0.38399454526511156,
-                "BTC Low": 0.9999999999999999,
-                "BTC Open": 0.46823462127635096,
-                "BTC Previous Close": 0.4658012608786015,
-                "BTC Price": 0.6278017905868979,
-                "Crude Oil Price": -0.00719413595423745,
-                "ETH Price": 0.004168905230358559,
-                "Gold Price": 0.09005841332130984,
-                "JNJ Price": 0.010816339981241865,
-                "JPM Price": -0.030910190809101845,
-                "MSFT Price": -0.007315207564633019,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": -0.0699600959630325
               }
             },
             "scatter": {
@@ -1344,14 +1344,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 66217.79726535534,
-                "y1": 68115.72027197802
+                "y0": 66223.49568139692,
+                "y1": 68128.14239409982
               }
             }
           },
@@ -1364,6 +1364,90 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  67928.1328,
+                  68097.91645384616,
+                  68267.70010769232,
+                  68437.48376153847,
+                  68607.26741538462,
+                  68777.05106923077,
+                  68946.83472307693,
+                  69116.61837692308,
+                  69286.40203076924,
+                  69456.1856846154,
+                  69625.96933846154,
+                  69795.7529923077,
+                  69965.53664615385,
+                  70135.3203
+                ],
+                "y": [
+                  72,
+                  0,
+                  0,
+                  29,
+                  0,
+                  0,
+                  0,
+                  37,
+                  0,
+                  0,
+                  0,
+                  0,
+                  14
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  67928.1328,
+                  68148.85155,
+                  68369.5703,
+                  68590.28905,
+                  68811.0078,
+                  69031.72655,
+                  69252.4453,
+                  69473.16405,
+                  69693.8828,
+                  69914.60155,
+                  70135.3203
+                ],
+                "y": [
+                  0.002146098646020403,
+                  0.0,
+                  0.0008644008435359956,
+                  0.0,
+                  0.0,
+                  0.0011028562486493738,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.00041729695894841167
+                ]
+              },
+              "correlations": {
+                "BTC High": 0.8624606211520294,
+                "BTC Low": 0.46172522736784277,
+                "BTC Open": 1.0,
+                "BTC Previous Close": 0.9999600285506482,
+                "BTC Price": 0.0022356989900429738,
+                "Crude Oil Price": -0.5696489516372326,
+                "ETH Price": 0.5134762771558679,
+                "Gold Price": 0.1852758554163359,
+                "JNJ Price": 0.6221265605209606,
+                "JPM Price": -0.6622231560462278,
+                "MSFT Price": -0.5702597654366619,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": 0.04542638724739307
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -1445,90 +1529,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": 0.045419530894428746
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  67928.1328,
-                  68097.91645384616,
-                  68267.70010769232,
-                  68437.48376153847,
-                  68607.26741538462,
-                  68777.05106923077,
-                  68946.83472307693,
-                  69116.61837692308,
-                  69286.40203076924,
-                  69456.1856846154,
-                  69625.96933846154,
-                  69795.7529923077,
-                  69965.53664615385,
-                  70135.3203
-                ],
-                "y": [
-                  72,
-                  0,
-                  0,
-                  27,
-                  0,
-                  0,
-                  0,
-                  37,
-                  0,
-                  0,
-                  0,
-                  0,
-                  14
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  67928.1328,
-                  68148.85155,
-                  68369.5703,
-                  68590.28905,
-                  68811.0078,
-                  69031.72655,
-                  69252.4453,
-                  69473.16405,
-                  69693.8828,
-                  69914.60155,
-                  70135.3203
-                ],
-                "y": [
-                  0.002174713294634008,
-                  0.0,
-                  0.0008155174854877531,
-                  0.0,
-                  0.0,
-                  0.0011175609986313654,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.00042286091840105714
-                ]
-              },
-              "correlations": {
-                "BTC High": 0.8625641725614271,
-                "BTC Low": 0.468234621276351,
-                "BTC Open": 0.9999999999999999,
-                "BTC Previous Close": 0.9999602129338353,
-                "BTC Price": 0.0023728938776765938,
-                "Crude Oil Price": -0.5713372294993424,
-                "ETH Price": 0.5139171539440051,
-                "Gold Price": 0.185408001552692,
-                "JNJ Price": 0.6246649793373996,
-                "JPM Price": -0.6647119102989724,
-                "MSFT Price": -0.5721560938785205,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": 0.04541258298254876
               }
             },
             "scatter": {
@@ -1989,14 +1989,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 67837.92218176284,
-                "y1": 69250.35634357049
+                "y0": 67840.23187149833,
+                "y1": 69247.9505417467
               }
             }
           },
@@ -2006,9 +2006,93 @@
             "column_type": "num",
             "stattest_name": "chi-square p_value",
             "stattest_threshold": 0.05,
-            "drift_score": 0.9986188587517033,
+            "drift_score": 0.9987045764936743,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  67929.5625,
+                  68099.32932307692,
+                  68269.09614615384,
+                  68438.86296923077,
+                  68608.62979230769,
+                  68778.39661538461,
+                  68948.16343846153,
+                  69117.93026153847,
+                  69287.69708461539,
+                  69457.4639076923,
+                  69627.23073076922,
+                  69796.99755384616,
+                  69966.76437692308,
+                  70136.5312
+                ],
+                "y": [
+                  72,
+                  0,
+                  0,
+                  29,
+                  0,
+                  0,
+                  0,
+                  37,
+                  0,
+                  0,
+                  0,
+                  0,
+                  14
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  67929.5625,
+                  68150.25937,
+                  68370.95624,
+                  68591.65311,
+                  68812.34998,
+                  69033.04685,
+                  69253.74372,
+                  69474.44059,
+                  69695.13746,
+                  69915.83433,
+                  70136.5312
+                ],
+                "y": [
+                  0.002146311411332278,
+                  0.0,
+                  0.0008644865406755009,
+                  0.0,
+                  0.0,
+                  0.0011029655863790872,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0004173383299812763
+                ]
+              },
+              "correlations": {
+                "BTC High": 0.8640646661915073,
+                "BTC Low": 0.45922484855750045,
+                "BTC Open": 0.9999600285506482,
+                "BTC Previous Close": 0.9999999999999999,
+                "BTC Price": 0.001904563660198149,
+                "Crude Oil Price": -0.5686994919926108,
+                "ETH Price": 0.5139553668702039,
+                "Gold Price": 0.1842748164416922,
+                "JNJ Price": 0.6208354241465731,
+                "JPM Price": -0.6611749519834993,
+                "MSFT Price": -0.5690069983415423,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": 0.04404697482547444
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -2090,90 +2174,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": 0.04402937900863304
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  67929.5625,
-                  68099.32932307692,
-                  68269.09614615384,
-                  68438.86296923077,
-                  68608.62979230769,
-                  68778.39661538461,
-                  68948.16343846153,
-                  69117.93026153847,
-                  69287.69708461539,
-                  69457.4639076923,
-                  69627.23073076922,
-                  69796.99755384616,
-                  69966.76437692308,
-                  70136.5312
-                ],
-                "y": [
-                  72,
-                  0,
-                  0,
-                  27,
-                  0,
-                  0,
-                  0,
-                  37,
-                  0,
-                  0,
-                  0,
-                  0,
-                  14
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  67929.5625,
-                  68150.25937,
-                  68370.95624,
-                  68591.65311,
-                  68812.34998,
-                  69033.04685,
-                  69253.74372,
-                  69474.44059,
-                  69695.13746,
-                  69915.83433,
-                  70136.5312
-                ],
-                "y": [
-                  0.002174928896816708,
-                  0.0,
-                  0.0008155983363062657,
-                  0.0,
-                  0.0,
-                  0.0011176717941974751,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.00042290284104769336
-                ]
-              },
-              "correlations": {
-                "BTC High": 0.8641777485559303,
-                "BTC Low": 0.46580126087860146,
-                "BTC Open": 0.9999602129338352,
-                "BTC Previous Close": 1.0,
-                "BTC Price": 0.002104013775690239,
-                "Crude Oil Price": -0.5703372392820779,
-                "ETH Price": 0.5144208809508424,
-                "Gold Price": 0.184378989261618,
-                "JNJ Price": 0.6233128173277246,
-                "JPM Price": -0.6636063947901997,
-                "MSFT Price": -0.5708486070153699,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": 0.0440115418710555
               }
             },
             "scatter": {
@@ -2634,14 +2634,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 67827.35458414748,
-                "y1": 69246.92685985251
+                "y0": 67829.6508172179,
+                "y1": 69244.48441324565
               }
             }
           },
@@ -2654,6 +2654,88 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  66923.3516,
+                  67107.774775,
+                  67292.19795,
+                  67476.62112499999,
+                  67661.0443,
+                  67845.467475,
+                  68029.89064999999,
+                  68214.31382499999,
+                  68398.737,
+                  68583.160175,
+                  68767.58335,
+                  68952.00652499999,
+                  69136.4297
+                ],
+                "y": [
+                  2,
+                  4,
+                  8,
+                  2,
+                  2,
+                  31,
+                  3,
+                  2,
+                  25,
+                  14,
+                  7,
+                  52
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  66923.3516,
+                  67144.65941,
+                  67365.96721999999,
+                  67587.27502999999,
+                  67808.58283999999,
+                  68029.89064999999,
+                  68251.19846,
+                  68472.50627,
+                  68693.81408,
+                  68915.12189,
+                  69136.4297
+                ],
+                "y": [
+                  8.918276361445761e-05,
+                  0.0002080931151004011,
+                  0.00017836552722891522,
+                  5.9455175742971736e-05,
+                  0.000921555224016062,
+                  8.918276361445174e-05,
+                  5.9455175742971736e-05,
+                  0.0007431896967871468,
+                  0.0005648241695582315,
+                  0.001605289745060237
+                ]
+              },
+              "correlations": {
+                "BTC High": 0.2278075513148451,
+                "BTC Low": 0.633091283735827,
+                "BTC Open": 0.0022356989900429738,
+                "BTC Previous Close": 0.001904563660198149,
+                "BTC Price": 1.0,
+                "Crude Oil Price": 0.5550878155774523,
+                "ETH Price": -0.09559996128983031,
+                "Gold Price": 0.04452958649844733,
+                "JNJ Price": -0.49264324579610114,
+                "JPM Price": 0.4682456838788748,
+                "MSFT Price": 0.5692861065990351,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": -0.5474567469177026
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -2733,88 +2815,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": -0.5473267162147073
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  66923.3516,
-                  67107.774775,
-                  67292.19795,
-                  67476.62112499999,
-                  67661.0443,
-                  67845.467475,
-                  68029.89064999999,
-                  68214.31382499999,
-                  68398.737,
-                  68583.160175,
-                  68767.58335,
-                  68952.00652499999,
-                  69136.4297
-                ],
-                "y": [
-                  2,
-                  4,
-                  8,
-                  2,
-                  2,
-                  31,
-                  3,
-                  2,
-                  25,
-                  14,
-                  7,
-                  50
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  66923.3516,
-                  67144.65941,
-                  67365.96721999999,
-                  67587.27502999999,
-                  67808.58283999999,
-                  68029.89064999999,
-                  68251.19846,
-                  68472.50627,
-                  68693.81408,
-                  68915.12189,
-                  69136.4297
-                ],
-                "y": [
-                  9.037186712931705e-05,
-                  0.00021086768996840644,
-                  0.0001807437342586341,
-                  6.0247911419544695e-05,
-                  0.0009338426270029428,
-                  9.03718671293111e-05,
-                  6.0247911419544695e-05,
-                  0.0007530988927443087,
-                  0.0005723551584856746,
-                  0.0015664456969081621
-                ]
-              },
-              "correlations": {
-                "BTC High": 0.22760302601470697,
-                "BTC Low": 0.6278017905868979,
-                "BTC Open": 0.002372893877676594,
-                "BTC Previous Close": 0.002104013775690239,
-                "BTC Price": 1.0,
-                "Crude Oil Price": 0.5515635066413105,
-                "ETH Price": -0.10033970720585192,
-                "Gold Price": 0.0495361291789374,
-                "JNJ Price": -0.48774172080078765,
-                "JPM Price": 0.4633420116693497,
-                "MSFT Price": 0.5656153619541974,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": -0.5471975233433412
               }
             },
             "scatter": {
@@ -3275,14 +3275,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 67867.16484567856,
-                "y1": 69047.08579032142
+                "y0": 67871.07145814609,
+                "y1": 69050.34308092674
               }
             }
           },
@@ -3295,6 +3295,88 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  76.6,
+                  76.71249999999999,
+                  76.82499999999999,
+                  76.9375,
+                  77.05,
+                  77.1625,
+                  77.275,
+                  77.3875,
+                  77.5,
+                  77.6125,
+                  77.725,
+                  77.8375,
+                  77.95
+                ],
+                "y": [
+                  1,
+                  3,
+                  45,
+                  5,
+                  0,
+                  0,
+                  0,
+                  0,
+                  2,
+                  66,
+                  24,
+                  6
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  76.6,
+                  76.735,
+                  76.86999999999999,
+                  77.005,
+                  77.14,
+                  77.275,
+                  77.41,
+                  77.545,
+                  77.68,
+                  77.815,
+                  77.95
+                ],
+                "y": [
+                  0.04873294346978373,
+                  0.19493177387915545,
+                  2.387914230019403,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.09746588693956745,
+                  4.337231968811208,
+                  0.3411306042884861
+                ]
+              },
+              "correlations": {
+                "BTC High": -0.22228334429180258,
+                "BTC Low": 0.005840259140757284,
+                "BTC Open": -0.5696489516372325,
+                "BTC Previous Close": -0.5686994919926108,
+                "BTC Price": 0.5550878155774523,
+                "Crude Oil Price": 1.0,
+                "ETH Price": -0.1676381439206697,
+                "Gold Price": -0.08794307379609063,
+                "JNJ Price": -0.9338944371893566,
+                "JPM Price": 0.9307263468080061,
+                "MSFT Price": 0.9412361461698853,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": -0.5130061863678625
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -3374,88 +3456,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": -0.5126042651497692
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  76.6,
-                  76.71249999999999,
-                  76.82499999999999,
-                  76.9375,
-                  77.05,
-                  77.1625,
-                  77.275,
-                  77.3875,
-                  77.5,
-                  77.6125,
-                  77.725,
-                  77.8375,
-                  77.95
-                ],
-                "y": [
-                  1,
-                  3,
-                  45,
-                  5,
-                  0,
-                  0,
-                  0,
-                  0,
-                  2,
-                  64,
-                  24,
-                  6
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  76.6,
-                  76.735,
-                  76.86999999999999,
-                  77.005,
-                  77.14,
-                  77.275,
-                  77.41,
-                  77.545,
-                  77.68,
-                  77.815,
-                  77.95
-                ],
-                "y": [
-                  0.04938271604938085,
-                  0.19753086419754418,
-                  2.4197530864196617,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0987654320987617,
-                  4.296296296296586,
-                  0.3456790123456659
-                ]
-              },
-              "correlations": {
-                "BTC High": -0.22412000816932287,
-                "BTC Low": -0.007194135954237449,
-                "BTC Open": -0.5713372294993424,
-                "BTC Previous Close": -0.5703372392820779,
-                "BTC Price": 0.5515635066413105,
-                "Crude Oil Price": 1.0,
-                "ETH Price": -0.17139334833107434,
-                "Gold Price": -0.08476963114513718,
-                "JNJ Price": -0.9334920286808253,
-                "JPM Price": 0.9302817870073712,
-                "MSFT Price": 0.9408565326165694,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": -0.5121963000105967
               }
             },
             "scatter": {
@@ -3916,14 +3916,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 77.00633739994714,
-                "y1": 77.8520626000529
+                "y0": 77.00901124140255,
+                "y1": 77.85324041422662
               }
             }
           },
@@ -3936,6 +3936,84 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  3665.9434,
+                  3681.14694,
+                  3696.35048,
+                  3711.55402,
+                  3726.75756,
+                  3741.9611,
+                  3757.16464,
+                  3772.36818,
+                  3787.57172,
+                  3802.77526,
+                  3817.9788
+                ],
+                "y": [
+                  4,
+                  2,
+                  10,
+                  4,
+                  63,
+                  35,
+                  2,
+                  27,
+                  1,
+                  4
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  3665.9434,
+                  3681.14694,
+                  3696.35048,
+                  3711.55402,
+                  3726.75756,
+                  3741.9611,
+                  3757.16464,
+                  3772.36818,
+                  3787.57172,
+                  3802.77526,
+                  3817.9788
+                ],
+                "y": [
+                  0.0017308988218325636,
+                  0.0008654494109162818,
+                  0.004327247054581408,
+                  0.0017308988218325636,
+                  0.027261656443862872,
+                  0.015145364691034932,
+                  0.0008654494109162818,
+                  0.011683567047369803,
+                  0.0004327247054581409,
+                  0.0017308988218325636
+                ]
+              },
+              "correlations": {
+                "BTC High": 0.6746760806769381,
+                "BTC Low": 0.010519623494819306,
+                "BTC Open": 0.5134762771558677,
+                "BTC Previous Close": 0.5139553668702039,
+                "BTC Price": -0.09559996128983031,
+                "Crude Oil Price": -0.1676381439206697,
+                "ETH Price": 1.0,
+                "Gold Price": -0.11544088376083032,
+                "JNJ Price": 0.16906864811907654,
+                "JPM Price": -0.2370481295665003,
+                "MSFT Price": -0.1610963586013482,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": -0.17398324978735175
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -4011,84 +4089,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": -0.1734325988403678
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  3665.9434,
-                  3681.14694,
-                  3696.35048,
-                  3711.55402,
-                  3726.75756,
-                  3741.9611,
-                  3757.16464,
-                  3772.36818,
-                  3787.57172,
-                  3802.77526,
-                  3817.9788
-                ],
-                "y": [
-                  4,
-                  2,
-                  10,
-                  4,
-                  63,
-                  33,
-                  2,
-                  27,
-                  1,
-                  4
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  3665.9434,
-                  3681.14694,
-                  3696.35048,
-                  3711.55402,
-                  3726.75756,
-                  3741.9611,
-                  3757.16464,
-                  3772.36818,
-                  3787.57172,
-                  3802.77526,
-                  3817.9788
-                ],
-                "y": [
-                  0.0017539774727903313,
-                  0.0008769887363951656,
-                  0.004384943681975827,
-                  0.0017539774727903313,
-                  0.027625145196447713,
-                  0.014470314150520231,
-                  0.0008769887363951656,
-                  0.011839347941334734,
-                  0.0004384943681975828,
-                  0.0017539774727903313
-                ]
-              },
-              "correlations": {
-                "BTC High": 0.6747073156633034,
-                "BTC Low": 0.004168905230358559,
-                "BTC Open": 0.5139171539440051,
-                "BTC Previous Close": 0.5144208809508424,
-                "BTC Price": -0.10033970720585193,
-                "Crude Oil Price": -0.17139334833107436,
-                "ETH Price": 1.0,
-                "Gold Price": -0.11389366603916418,
-                "JNJ Price": 0.17353756797959094,
-                "JPM Price": -0.241630562053358,
-                "MSFT Price": -0.16506499369986405,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": -0.17287384988798937
               }
             },
             "scatter": {
@@ -4549,14 +4549,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 3715.4861264655983,
-                "y1": 3769.805400201066
+                "y0": 3715.6275960058865,
+                "y1": 3769.7864238616603
               }
             }
           },
@@ -4569,6 +4569,96 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  2330.6001,
+                  2334.26259375,
+                  2337.9250875000002,
+                  2341.58758125,
+                  2345.250075,
+                  2348.91256875,
+                  2352.5750625,
+                  2356.23755625,
+                  2359.90005,
+                  2363.56254375,
+                  2367.2250375,
+                  2370.88753125,
+                  2374.550025,
+                  2378.21251875,
+                  2381.8750124999997,
+                  2385.5375062499998,
+                  2389.2
+                ],
+                "y": [
+                  70,
+                  81,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  2330.6001,
+                  2336.46009,
+                  2342.32008,
+                  2348.18007,
+                  2354.04006,
+                  2359.90005,
+                  2365.76004,
+                  2371.62003,
+                  2377.48002,
+                  2383.34001,
+                  2389.2
+                ],
+                "y": [
+                  0.1616672419326046,
+                  0.007858824260612724,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.001122689180087532
+                ]
+              },
+              "correlations": {
+                "BTC High": 0.08863945140756031,
+                "BTC Low": 0.08144855335740443,
+                "BTC Open": 0.1852758554163359,
+                "BTC Previous Close": 0.18427481644169216,
+                "BTC Price": 0.04452958649844733,
+                "Crude Oil Price": -0.08794307379609062,
+                "ETH Price": -0.11544088376083032,
+                "Gold Price": 0.9999999999999998,
+                "JNJ Price": 0.2505403757431978,
+                "JPM Price": -0.24110759698785364,
+                "MSFT Price": -0.21726099035668625,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": 0.0726705611703195
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -4656,96 +4746,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": 0.0719664581584469
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  2330.6001,
-                  2334.26259375,
-                  2337.9250875000002,
-                  2341.58758125,
-                  2345.250075,
-                  2348.91256875,
-                  2352.5750625,
-                  2356.23755625,
-                  2359.90005,
-                  2363.56254375,
-                  2367.2250375,
-                  2370.88753125,
-                  2374.550025,
-                  2378.21251875,
-                  2381.8750124999997,
-                  2385.5375062499998,
-                  2389.2
-                ],
-                "y": [
-                  68,
-                  81,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  2330.6001,
-                  2336.46009,
-                  2342.32008,
-                  2348.18007,
-                  2354.04006,
-                  2359.90005,
-                  2365.76004,
-                  2371.62003,
-                  2377.48002,
-                  2383.34001,
-                  2389.2
-                ],
-                "y": [
-                  0.16154748842006195,
-                  0.00796360858408756,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0011376583691553657
-                ]
-              },
-              "correlations": {
-                "BTC High": 0.08936859867578187,
-                "BTC Low": 0.09005841332130984,
-                "BTC Open": 0.185408001552692,
-                "BTC Previous Close": 0.18437898926161803,
-                "BTC Price": 0.049536129178937405,
-                "Crude Oil Price": -0.08476963114513719,
-                "ETH Price": -0.11389366603916419,
-                "Gold Price": 1.0,
-                "JNJ Price": 0.24773117607024836,
-                "JPM Price": -0.23833521532777055,
-                "MSFT Price": -0.2144978534109541,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": 0.0712518374227033
               }
             },
             "scatter": {
@@ -5206,14 +5206,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 2329.594200413864,
-                "y1": 2339.093799586136
+                "y0": 2329.5954697924612,
+                "y1": 2339.0681063664792
               }
             }
           },
@@ -5226,6 +5226,88 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  146.84,
+                  147.10083333333333,
+                  147.36166666666668,
+                  147.6225,
+                  147.88333333333333,
+                  148.14416666666668,
+                  148.405,
+                  148.66583333333332,
+                  148.92666666666668,
+                  149.1875,
+                  149.44833333333332,
+                  149.70916666666668,
+                  149.97
+                ],
+                "y": [
+                  86,
+                  0,
+                  4,
+                  1,
+                  5,
+                  6,
+                  1,
+                  1,
+                  0,
+                  2,
+                  43,
+                  3
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  146.84,
+                  147.153,
+                  147.466,
+                  147.779,
+                  148.092,
+                  148.405,
+                  148.718,
+                  149.031,
+                  149.344,
+                  149.657,
+                  149.97
+                ],
+                "y": [
+                  1.807634101227578,
+                  0.0420380023541259,
+                  0.06305700353119457,
+                  0.0840760047082518,
+                  0.14713300823945402,
+                  0.04203800235412972,
+                  0.0,
+                  0.02101900117706486,
+                  0.0420380023541259,
+                  0.9458550529679187
+                ]
+              },
+              "correlations": {
+                "BTC High": 0.29858159116427946,
+                "BTC Low": -0.004427078365403384,
+                "BTC Open": 0.6221265605209605,
+                "BTC Previous Close": 0.6208354241465731,
+                "BTC Price": -0.4926432457961011,
+                "Crude Oil Price": -0.9338944371893567,
+                "ETH Price": 0.16906864811907654,
+                "Gold Price": 0.25054037574319776,
+                "JNJ Price": 0.9999999999999998,
+                "JPM Price": -0.9884185974480959,
+                "MSFT Price": -0.940243995291596,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": 0.3909884654220715
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -5305,88 +5387,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": 0.3903557699039059
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  146.84,
-                  147.10083333333333,
-                  147.36166666666668,
-                  147.6225,
-                  147.88333333333333,
-                  148.14416666666668,
-                  148.405,
-                  148.66583333333332,
-                  148.92666666666668,
-                  149.1875,
-                  149.44833333333332,
-                  149.70916666666668,
-                  149.97
-                ],
-                "y": [
-                  84,
-                  0,
-                  4,
-                  1,
-                  5,
-                  6,
-                  1,
-                  1,
-                  0,
-                  2,
-                  43,
-                  3
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  146.84,
-                  147.153,
-                  147.466,
-                  147.779,
-                  148.092,
-                  148.405,
-                  148.718,
-                  149.031,
-                  149.344,
-                  149.657,
-                  149.97
-                ],
-                "y": [
-                  1.789137380191761,
-                  0.04259850905218091,
-                  0.06389776357827717,
-                  0.08519701810436182,
-                  0.14909478168264675,
-                  0.042598509052184784,
-                  0.0,
-                  0.021299254526092392,
-                  0.04259850905218091,
-                  0.9584664536741576
-                ]
-              },
-              "correlations": {
-                "BTC High": 0.3011879371256377,
-                "BTC Low": 0.010816339981241865,
-                "BTC Open": 0.6246649793373996,
-                "BTC Previous Close": 0.6233128173277247,
-                "BTC Price": -0.48774172080078765,
-                "Crude Oil Price": -0.9334920286808251,
-                "ETH Price": 0.17353756797959094,
-                "Gold Price": 0.2477311760702484,
-                "JNJ Price": 1.0,
-                "JPM Price": -0.9883308138442067,
-                "MSFT Price": -0.9398167468538803,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": 0.3897128479187254
               }
             },
             "scatter": {
@@ -5847,14 +5847,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 146.72485024297043,
-                "y1": 149.2059657570295
+                "y0": 146.71974951437625,
+                "y1": 149.19788227370321
               }
             }
           },
@@ -5867,6 +5867,88 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  196.53,
+                  196.87833333333333,
+                  197.22666666666666,
+                  197.575,
+                  197.92333333333335,
+                  198.27166666666668,
+                  198.62,
+                  198.96833333333333,
+                  199.31666666666666,
+                  199.66500000000002,
+                  200.01333333333335,
+                  200.36166666666668,
+                  200.71
+                ],
+                "y": [
+                  2,
+                  44,
+                  0,
+                  0,
+                  0,
+                  1,
+                  3,
+                  1,
+                  3,
+                  4,
+                  10,
+                  84
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  196.53,
+                  196.948,
+                  197.366,
+                  197.784,
+                  198.202,
+                  198.62,
+                  199.038,
+                  199.45600000000002,
+                  199.874,
+                  200.292,
+                  200.71
+                ],
+                "y": [
+                  0.7239989926970426,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.01573910853689223,
+                  0.04721732561067669,
+                  0.04721732561067669,
+                  0.0786955426844665,
+                  0.1573910853689223,
+                  1.3220851170989474
+                ]
+              },
+              "correlations": {
+                "BTC High": -0.37241577954207983,
+                "BTC Low": -0.01593116079587624,
+                "BTC Open": -0.6622231560462278,
+                "BTC Previous Close": -0.6611749519834993,
+                "BTC Price": 0.4682456838788747,
+                "Crude Oil Price": 0.9307263468080063,
+                "ETH Price": -0.23704812956650032,
+                "Gold Price": -0.24110759698785364,
+                "JNJ Price": -0.9884185974480959,
+                "JPM Price": 1.0,
+                "MSFT Price": 0.9362250063255411,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": -0.3243051369414764
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -5946,88 +6028,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": -0.32352189010501614
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  196.53,
-                  196.87833333333333,
-                  197.22666666666666,
-                  197.575,
-                  197.92333333333335,
-                  198.27166666666668,
-                  198.62,
-                  198.96833333333333,
-                  199.31666666666666,
-                  199.66500000000002,
-                  200.01333333333335,
-                  200.36166666666668,
-                  200.71
-                ],
-                "y": [
-                  2,
-                  44,
-                  0,
-                  0,
-                  0,
-                  1,
-                  3,
-                  1,
-                  3,
-                  4,
-                  10,
-                  82
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  196.53,
-                  196.948,
-                  197.366,
-                  197.784,
-                  198.202,
-                  198.62,
-                  199.038,
-                  199.45600000000002,
-                  199.874,
-                  200.292,
-                  200.71
-                ],
-                "y": [
-                  0.7336523125996699,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.015948963317384126,
-                  0.04784688995215238,
-                  0.04784688995215238,
-                  0.07974481658692606,
-                  0.15948963317384127,
-                  1.3078149920254984
-                ]
-              },
-              "correlations": {
-                "BTC High": -0.3751640262193232,
-                "BTC Low": -0.030910190809101845,
-                "BTC Open": -0.6647119102989724,
-                "BTC Previous Close": -0.6636063947901996,
-                "BTC Price": 0.4633420116693497,
-                "Crude Oil Price": 0.9302817870073713,
-                "ETH Price": -0.24163056205335803,
-                "Gold Price": -0.23833521532777052,
-                "JNJ Price": -0.9883308138442067,
-                "JPM Price": 1.0,
-                "MSFT Price": 0.9357630439143299,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": -0.3227255215034718
               }
             },
             "scatter": {
@@ -6488,14 +6488,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 197.68591321501216,
-                "y1": 201.1036241183211
+                "y0": 197.69696924385192,
+                "y1": 201.10998837204204
               }
             }
           },
@@ -6508,6 +6508,88 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  424.835,
+                  425.339475,
+                  425.84394999999995,
+                  426.34842499999996,
+                  426.8529,
+                  427.357375,
+                  427.86185,
+                  428.36632499999996,
+                  428.8708,
+                  429.375275,
+                  429.87974999999994,
+                  430.38422499999996,
+                  430.8887
+                ],
+                "y": [
+                  3,
+                  0,
+                  2,
+                  4,
+                  41,
+                  1,
+                  1,
+                  0,
+                  0,
+                  7,
+                  91,
+                  2
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  424.835,
+                  425.44037,
+                  426.04573999999997,
+                  426.65110999999996,
+                  427.25647999999995,
+                  427.86185,
+                  428.46722,
+                  429.07259,
+                  429.67796,
+                  430.28333,
+                  430.8887
+                ],
+                "y": [
+                  0.03260294052441213,
+                  0.010867646841470709,
+                  0.03260294052441213,
+                  0.4673088141832405,
+                  0.010867646841469689,
+                  0.010867646841470709,
+                  0.0,
+                  0.043470587365882836,
+                  1.010691156256776,
+                  0.03260294052441213
+                ]
+              },
+              "correlations": {
+                "BTC High": -0.2323105625156176,
+                "BTC Low": 0.006464606495417203,
+                "BTC Open": -0.5702597654366619,
+                "BTC Previous Close": -0.5690069983415423,
+                "BTC Price": 0.5692861065990351,
+                "Crude Oil Price": 0.9412361461698852,
+                "ETH Price": -0.16109635860134822,
+                "Gold Price": -0.21726099035668625,
+                "JNJ Price": -0.940243995291596,
+                "JPM Price": 0.9362250063255411,
+                "MSFT Price": 1.0,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": -0.6062432636234264
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -6587,88 +6669,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": -0.6060467914577627
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  424.835,
-                  425.339475,
-                  425.84394999999995,
-                  426.34842499999996,
-                  426.8529,
-                  427.357375,
-                  427.86185,
-                  428.36632499999996,
-                  428.8708,
-                  429.375275,
-                  429.87974999999994,
-                  430.38422499999996,
-                  430.8887
-                ],
-                "y": [
-                  3,
-                  0,
-                  2,
-                  4,
-                  41,
-                  1,
-                  1,
-                  0,
-                  0,
-                  7,
-                  89,
-                  2
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  424.835,
-                  425.44037,
-                  426.04573999999997,
-                  426.65110999999996,
-                  427.25647999999995,
-                  427.86185,
-                  428.46722,
-                  429.07259,
-                  429.67796,
-                  430.28333,
-                  430.8887
-                ],
-                "y": [
-                  0.033037646398070955,
-                  0.011012548799356986,
-                  0.033037646398070955,
-                  0.4735395983723504,
-                  0.011012548799355952,
-                  0.011012548799356986,
-                  0.0,
-                  0.04405019519742794,
-                  1.0021419407414855,
-                  0.033037646398070955
-                ]
-              },
-              "correlations": {
-                "BTC High": -0.23433040793867374,
-                "BTC Low": -0.007315207564633019,
-                "BTC Open": -0.5721560938785205,
-                "BTC Previous Close": -0.57084860701537,
-                "BTC Price": 0.5656153619541974,
-                "Crude Oil Price": 0.9408565326165695,
-                "ETH Price": -0.16506499369986405,
-                "Gold Price": -0.21449785341095412,
-                "JNJ Price": -0.9398167468538803,
-                "JPM Price": 0.9357630439143299,
-                "MSFT Price": 1.0,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": -0.6058481734903524
               }
             },
             "scatter": {
@@ -7129,14 +7129,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 427.3954564004066,
-                "y1": 430.59626093292684
+                "y0": 427.4056986412997,
+                "y1": 430.6014377825415
               }
             }
           },
@@ -7157,7 +7157,7 @@
                   2.5
                 ],
                 "y": [
-                  151
+                  152
                 ]
               },
               "characteristic_examples": null,
@@ -7217,7 +7217,7 @@
                   2.5
                 ],
                 "y": [
-                  150
+                  151
                 ]
               },
               "characteristic_examples": null,
@@ -7726,7 +7726,7 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
@@ -7754,7 +7754,7 @@
                   0.5
                 ],
                 "y": [
-                  151
+                  152
                 ]
               },
               "characteristic_examples": null,
@@ -7814,7 +7814,7 @@
                   0.5
                 ],
                 "y": [
-                  150
+                  151
                 ]
               },
               "characteristic_examples": null,
@@ -8323,7 +8323,7 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
@@ -8351,7 +8351,7 @@
                   2.5
                 ],
                 "y": [
-                  151
+                  152
                 ]
               },
               "characteristic_examples": null,
@@ -8411,7 +8411,7 @@
                   2.5
                 ],
                 "y": [
-                  150
+                  151
                 ]
               },
               "characteristic_examples": null,
@@ -8920,7 +8920,7 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
@@ -8940,6 +8940,94 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  113.16,
+                  113.27924666666667,
+                  113.39849333333333,
+                  113.51774,
+                  113.63698666666666,
+                  113.75623333333333,
+                  113.87548,
+                  113.99472666666666,
+                  114.11397333333333,
+                  114.23322,
+                  114.35246666666667,
+                  114.47171333333334,
+                  114.59096,
+                  114.71020666666666,
+                  114.82945333333333,
+                  114.9487
+                ],
+                "y": [
+                  10,
+                  1,
+                  125,
+                  4,
+                  5,
+                  3,
+                  0,
+                  0,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  1
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  113.16,
+                  113.33887,
+                  113.51774,
+                  113.69660999999999,
+                  113.87548,
+                  114.05435,
+                  114.23322,
+                  114.41209,
+                  114.59096,
+                  114.76983,
+                  114.9487
+                ],
+                "y": [
+                  0.40458668895080335,
+                  4.597576010804584,
+                  0.22068364851863753,
+                  0.22068364851862,
+                  0.0,
+                  0.0,
+                  0.03678060808643667,
+                  0.03678060808643959,
+                  0.0,
+                  0.07356121617287334
+                ]
+              },
+              "correlations": {
+                "BTC High": -0.26650641063403924,
+                "BTC Low": -0.07459254734944701,
+                "BTC Open": 0.04542638724739308,
+                "BTC Previous Close": 0.04404697482547445,
+                "BTC Price": -0.5474567469177026,
+                "Crude Oil Price": -0.5130061863678625,
+                "ETH Price": -0.17398324978735177,
+                "Gold Price": 0.0726705611703195,
+                "JNJ Price": 0.3909884654220715,
+                "JPM Price": -0.3243051369414764,
+                "MSFT Price": -0.6062432636234264,
+                "Sentiment Article 1": NaN,
+                "Sentiment Article 2": NaN,
+                "Sentiment Article 3": NaN,
+                "XOM Price": 1.0
+              }
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -9025,94 +9113,6 @@
                 "Sentiment Article 2": NaN,
                 "Sentiment Article 3": NaN,
                 "XOM Price": 1.0
-              }
-            },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  113.16,
-                  113.27924666666667,
-                  113.39849333333333,
-                  113.51774,
-                  113.63698666666666,
-                  113.75623333333333,
-                  113.87548,
-                  113.99472666666666,
-                  114.11397333333333,
-                  114.23322,
-                  114.35246666666667,
-                  114.47171333333334,
-                  114.59096,
-                  114.71020666666666,
-                  114.82945333333333,
-                  114.9487
-                ],
-                "y": [
-                  10,
-                  1,
-                  123,
-                  4,
-                  5,
-                  3,
-                  0,
-                  0,
-                  0,
-                  0,
-                  2,
-                  0,
-                  0,
-                  1,
-                  1
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  113.16,
-                  113.33887,
-                  113.51774,
-                  113.69660999999999,
-                  113.87548,
-                  114.05435,
-                  114.23322,
-                  114.41209,
-                  114.59096,
-                  114.76983,
-                  114.9487
-                ],
-                "y": [
-                  0.40998117813681406,
-                  4.584334991893466,
-                  0.2236260971655527,
-                  0.22362609716553494,
-                  0.0,
-                  0.0,
-                  0.03727101619425583,
-                  0.03727101619425879,
-                  0.0,
-                  0.07454203238851166
-                ]
-              },
-              "correlations": {
-                "BTC High": -0.26620459759886056,
-                "BTC Low": -0.0699600959630325,
-                "BTC Open": 0.04541258298254876,
-                "BTC Previous Close": 0.0440115418710555,
-                "BTC Price": -0.547197523343341,
-                "Crude Oil Price": -0.5121963000105966,
-                "ETH Price": -0.17287384988798937,
-                "Gold Price": 0.0712518374227033,
-                "JNJ Price": 0.3897128479187254,
-                "JPM Price": -0.3227255215034718,
-                "MSFT Price": -0.6058481734903524,
-                "Sentiment Article 1": NaN,
-                "Sentiment Article 2": NaN,
-                "Sentiment Article 3": NaN,
-                "XOM Price": 0.9999999999999999
               }
             },
             "scatter": {
@@ -9573,14 +9573,14 @@
                     "146": NaN,
                     "147": NaN,
                     "148": NaN,
-                    "149": NaN
+                    "149": 0.0
                   }
                 }
               },
               "x_name": "Index binned",
               "plot_shape": {
-                "y0": 113.2644229800792,
-                "y1": 113.70786101992077
+                "y0": 113.26465970889888,
+                "y1": 113.70674823812098
               }
             }
           },
@@ -9593,6 +9593,330 @@
             "drift_score": 1.0,
             "drift_detected": false,
             "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  "2024-05-25 16:23:19",
+                  "2024-05-25 11:58:38",
+                  "2024-05-24 22:57:19",
+                  "2024-05-25 04:58:22",
+                  "2024-05-25 07:56:54",
+                  "2024-05-24 21:57:57",
+                  "2024-05-25 10:22:08",
+                  "2024-05-24 20:55:27",
+                  "2024-05-24 18:55:20",
+                  "2024-05-24 19:29:18",
+                  "2024-05-24 20:22:53",
+                  "2024-05-23 22:21:15",
+                  "2024-05-24 11:21:00",
+                  "2024-05-25 11:19:18",
+                  "2024-05-24 15:42:13",
+                  "2024-05-24 12:40:09",
+                  "2024-05-24 13:02:36",
+                  "2024-05-24 13:26:31",
+                  "2024-05-24 13:37:58",
+                  "2024-05-24 13:41:43",
+                  "2024-05-24 13:56:13",
+                  "2024-05-24 14:19:43",
+                  "2024-05-24 14:41:04",
+                  "2024-05-24 14:56:57",
+                  "2024-05-24 15:22:46",
+                  "2024-05-24 17:55:38",
+                  "2024-05-24 15:57:08",
+                  "2024-05-24 16:23:45",
+                  "2024-05-24 16:41:47",
+                  "2024-05-24 16:56:20",
+                  "2024-05-24 17:20:26",
+                  "2024-05-24 17:40:48",
+                  "2024-05-24 12:32:41",
+                  "2024-05-24 18:21:13",
+                  "2024-05-24 18:26:20",
+                  "2024-05-24 18:44:22",
+                  "2024-05-24 19:57:01",
+                  "2024-05-25 04:41:37",
+                  "2024-05-24 12:36:36",
+                  "2024-05-23 18:36:39",
+                  "2024-05-23 18:49:53",
+                  "2024-05-24 10:55:43",
+                  "2024-05-24 04:25:07",
+                  "2024-05-24 03:55:28",
+                  "2024-05-24 03:41:11",
+                  "2024-05-24 03:22:20",
+                  "2024-05-24 02:55:08",
+                  "2024-05-24 02:39:58",
+                  "2024-05-24 02:19:40",
+                  "2024-05-24 01:20:14",
+                  "2024-05-23 23:58:04",
+                  "2024-05-23 21:55:45",
+                  "2024-05-23 21:19:15",
+                  "2024-05-23 20:21:55",
+                  "2024-05-23 19:57:40",
+                  "2024-05-23 19:41:40",
+                  "2024-05-23 19:29:20",
+                  "2024-05-24 04:44:35",
+                  "2024-05-24 04:55:53",
+                  "2024-05-24 05:20:07",
+                  "2024-05-24 08:26:06",
+                  "2024-05-24 10:41:25",
+                  "2024-05-24 10:22:59",
+                  "2024-05-24 09:56:13",
+                  "2024-05-24 09:41:01",
+                  "2024-05-24 09:22:24",
+                  "2024-05-24 08:56:05",
+                  "2024-05-24 07:56:00",
+                  "2024-05-24 05:40:45",
+                  "2024-05-24 07:40:37",
+                  "2024-05-24 07:19:10",
+                  "2024-05-24 06:55:43",
+                  "2024-05-24 06:43:10",
+                  "2024-05-24 06:27:44",
+                  "2024-05-24 05:57:22",
+                  "2024-05-24 11:57:32"
+                ],
+                "y": [
+                  29,
+                  12,
+                  12,
+                  9,
+                  7,
+                  3,
+                  3,
+                  3,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  "2024-05-23 18:36:39",
+                  "2024-05-23 18:49:53",
+                  "2024-05-23 19:29:20",
+                  "2024-05-23 19:41:40",
+                  "2024-05-23 19:57:40",
+                  "2024-05-23 20:21:55",
+                  "2024-05-23 21:19:15",
+                  "2024-05-23 21:55:45",
+                  "2024-05-23 22:21:15",
+                  "2024-05-23 23:58:04",
+                  "2024-05-24 01:20:14",
+                  "2024-05-24 02:19:40",
+                  "2024-05-24 02:39:58",
+                  "2024-05-24 02:55:08",
+                  "2024-05-24 03:22:20",
+                  "2024-05-24 03:41:11",
+                  "2024-05-24 03:55:28",
+                  "2024-05-24 04:25:07",
+                  "2024-05-24 04:44:35",
+                  "2024-05-24 04:55:53",
+                  "2024-05-24 05:20:07",
+                  "2024-05-24 05:40:45",
+                  "2024-05-24 05:57:22",
+                  "2024-05-24 06:27:44",
+                  "2024-05-24 06:43:10",
+                  "2024-05-24 06:55:43",
+                  "2024-05-24 07:19:10",
+                  "2024-05-24 07:40:37",
+                  "2024-05-24 07:56:00",
+                  "2024-05-24 08:26:06",
+                  "2024-05-24 08:56:05",
+                  "2024-05-24 09:22:24",
+                  "2024-05-24 09:41:01",
+                  "2024-05-24 09:56:13",
+                  "2024-05-24 10:22:59",
+                  "2024-05-24 10:41:25",
+                  "2024-05-24 10:55:43",
+                  "2024-05-24 11:21:00",
+                  "2024-05-24 11:57:32",
+                  "2024-05-24 12:32:41",
+                  "2024-05-24 12:36:36",
+                  "2024-05-24 12:40:09",
+                  "2024-05-24 13:02:36",
+                  "2024-05-24 13:26:31",
+                  "2024-05-24 13:37:58",
+                  "2024-05-24 13:41:43",
+                  "2024-05-24 13:56:13",
+                  "2024-05-24 14:19:43",
+                  "2024-05-24 14:41:04",
+                  "2024-05-24 14:56:57",
+                  "2024-05-24 15:22:46",
+                  "2024-05-24 15:42:13",
+                  "2024-05-24 15:57:08",
+                  "2024-05-24 16:23:45",
+                  "2024-05-24 16:41:47",
+                  "2024-05-24 16:56:20",
+                  "2024-05-24 17:20:26",
+                  "2024-05-24 17:40:48",
+                  "2024-05-24 17:55:38",
+                  "2024-05-24 18:21:13",
+                  "2024-05-24 18:26:20",
+                  "2024-05-24 18:44:22",
+                  "2024-05-24 18:55:20",
+                  "2024-05-24 19:29:18",
+                  "2024-05-24 19:57:01",
+                  "2024-05-24 20:22:53",
+                  "2024-05-24 20:55:27",
+                  "2024-05-24 21:57:57",
+                  "2024-05-24 22:57:19",
+                  "2024-05-25 04:41:37",
+                  "2024-05-25 04:58:22",
+                  "2024-05-25 07:56:54",
+                  "2024-05-25 10:22:08",
+                  "2024-05-25 11:19:18",
+                  "2024-05-25 11:58:38",
+                  "2024-05-25 16:23:19"
+                ],
+                "y": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  2,
+                  2,
+                  1,
+                  2,
+                  3,
+                  3,
+                  12,
+                  1,
+                  9,
+                  7,
+                  3,
+                  2,
+                  12,
+                  29
+                ]
+              },
+              "correlations": null
+            },
+            "reference": {
               "type": "evidently.calculations.data_drift.DriftStatsField",
               "distribution": {
                 "type": "evidently.metric_results.Distribution",
@@ -9916,330 +10240,6 @@
               },
               "correlations": null
             },
-            "reference": {
-              "type": "evidently.calculations.data_drift.DriftStatsField",
-              "distribution": {
-                "type": "evidently.metric_results.Distribution",
-                "x": [
-                  "2024-05-25 16:23:19",
-                  "2024-05-25 11:58:38",
-                  "2024-05-24 22:57:19",
-                  "2024-05-25 04:58:22",
-                  "2024-05-25 07:56:54",
-                  "2024-05-24 21:57:57",
-                  "2024-05-25 10:22:08",
-                  "2024-05-24 20:55:27",
-                  "2024-05-24 18:55:20",
-                  "2024-05-24 19:29:18",
-                  "2024-05-24 20:22:53",
-                  "2024-05-23 22:21:15",
-                  "2024-05-24 11:21:00",
-                  "2024-05-25 11:19:18",
-                  "2024-05-24 15:42:13",
-                  "2024-05-24 12:40:09",
-                  "2024-05-24 13:02:36",
-                  "2024-05-24 13:26:31",
-                  "2024-05-24 13:37:58",
-                  "2024-05-24 13:41:43",
-                  "2024-05-24 13:56:13",
-                  "2024-05-24 14:19:43",
-                  "2024-05-24 14:41:04",
-                  "2024-05-24 14:56:57",
-                  "2024-05-24 15:22:46",
-                  "2024-05-24 17:55:38",
-                  "2024-05-24 15:57:08",
-                  "2024-05-24 16:23:45",
-                  "2024-05-24 16:41:47",
-                  "2024-05-24 16:56:20",
-                  "2024-05-24 17:20:26",
-                  "2024-05-24 17:40:48",
-                  "2024-05-24 12:32:41",
-                  "2024-05-24 18:21:13",
-                  "2024-05-24 18:26:20",
-                  "2024-05-24 18:44:22",
-                  "2024-05-24 19:57:01",
-                  "2024-05-25 04:41:37",
-                  "2024-05-24 12:36:36",
-                  "2024-05-23 18:36:39",
-                  "2024-05-23 18:49:53",
-                  "2024-05-24 10:55:43",
-                  "2024-05-24 04:25:07",
-                  "2024-05-24 03:55:28",
-                  "2024-05-24 03:41:11",
-                  "2024-05-24 03:22:20",
-                  "2024-05-24 02:55:08",
-                  "2024-05-24 02:39:58",
-                  "2024-05-24 02:19:40",
-                  "2024-05-24 01:20:14",
-                  "2024-05-23 23:58:04",
-                  "2024-05-23 21:55:45",
-                  "2024-05-23 21:19:15",
-                  "2024-05-23 20:21:55",
-                  "2024-05-23 19:57:40",
-                  "2024-05-23 19:41:40",
-                  "2024-05-23 19:29:20",
-                  "2024-05-24 04:44:35",
-                  "2024-05-24 04:55:53",
-                  "2024-05-24 05:20:07",
-                  "2024-05-24 08:26:06",
-                  "2024-05-24 10:41:25",
-                  "2024-05-24 10:22:59",
-                  "2024-05-24 09:56:13",
-                  "2024-05-24 09:41:01",
-                  "2024-05-24 09:22:24",
-                  "2024-05-24 08:56:05",
-                  "2024-05-24 07:56:00",
-                  "2024-05-24 05:40:45",
-                  "2024-05-24 07:40:37",
-                  "2024-05-24 07:19:10",
-                  "2024-05-24 06:55:43",
-                  "2024-05-24 06:43:10",
-                  "2024-05-24 06:27:44",
-                  "2024-05-24 05:57:22",
-                  "2024-05-24 11:57:32"
-                ],
-                "y": [
-                  27,
-                  12,
-                  12,
-                  9,
-                  7,
-                  3,
-                  3,
-                  3,
-                  2,
-                  2,
-                  2,
-                  2,
-                  2,
-                  2,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1
-                ]
-              },
-              "characteristic_examples": null,
-              "characteristic_words": null,
-              "small_distribution": {
-                "type": "evidently.metric_results.DistributionIncluded",
-                "x": [
-                  "2024-05-23 18:36:39",
-                  "2024-05-23 18:49:53",
-                  "2024-05-23 19:29:20",
-                  "2024-05-23 19:41:40",
-                  "2024-05-23 19:57:40",
-                  "2024-05-23 20:21:55",
-                  "2024-05-23 21:19:15",
-                  "2024-05-23 21:55:45",
-                  "2024-05-23 22:21:15",
-                  "2024-05-23 23:58:04",
-                  "2024-05-24 01:20:14",
-                  "2024-05-24 02:19:40",
-                  "2024-05-24 02:39:58",
-                  "2024-05-24 02:55:08",
-                  "2024-05-24 03:22:20",
-                  "2024-05-24 03:41:11",
-                  "2024-05-24 03:55:28",
-                  "2024-05-24 04:25:07",
-                  "2024-05-24 04:44:35",
-                  "2024-05-24 04:55:53",
-                  "2024-05-24 05:20:07",
-                  "2024-05-24 05:40:45",
-                  "2024-05-24 05:57:22",
-                  "2024-05-24 06:27:44",
-                  "2024-05-24 06:43:10",
-                  "2024-05-24 06:55:43",
-                  "2024-05-24 07:19:10",
-                  "2024-05-24 07:40:37",
-                  "2024-05-24 07:56:00",
-                  "2024-05-24 08:26:06",
-                  "2024-05-24 08:56:05",
-                  "2024-05-24 09:22:24",
-                  "2024-05-24 09:41:01",
-                  "2024-05-24 09:56:13",
-                  "2024-05-24 10:22:59",
-                  "2024-05-24 10:41:25",
-                  "2024-05-24 10:55:43",
-                  "2024-05-24 11:21:00",
-                  "2024-05-24 11:57:32",
-                  "2024-05-24 12:32:41",
-                  "2024-05-24 12:36:36",
-                  "2024-05-24 12:40:09",
-                  "2024-05-24 13:02:36",
-                  "2024-05-24 13:26:31",
-                  "2024-05-24 13:37:58",
-                  "2024-05-24 13:41:43",
-                  "2024-05-24 13:56:13",
-                  "2024-05-24 14:19:43",
-                  "2024-05-24 14:41:04",
-                  "2024-05-24 14:56:57",
-                  "2024-05-24 15:22:46",
-                  "2024-05-24 15:42:13",
-                  "2024-05-24 15:57:08",
-                  "2024-05-24 16:23:45",
-                  "2024-05-24 16:41:47",
-                  "2024-05-24 16:56:20",
-                  "2024-05-24 17:20:26",
-                  "2024-05-24 17:40:48",
-                  "2024-05-24 17:55:38",
-                  "2024-05-24 18:21:13",
-                  "2024-05-24 18:26:20",
-                  "2024-05-24 18:44:22",
-                  "2024-05-24 18:55:20",
-                  "2024-05-24 19:29:18",
-                  "2024-05-24 19:57:01",
-                  "2024-05-24 20:22:53",
-                  "2024-05-24 20:55:27",
-                  "2024-05-24 21:57:57",
-                  "2024-05-24 22:57:19",
-                  "2024-05-25 04:41:37",
-                  "2024-05-25 04:58:22",
-                  "2024-05-25 07:56:54",
-                  "2024-05-25 10:22:08",
-                  "2024-05-25 11:19:18",
-                  "2024-05-25 11:58:38",
-                  "2024-05-25 16:23:19"
-                ],
-                "y": [
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  2,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  2,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  1,
-                  2,
-                  2,
-                  1,
-                  2,
-                  3,
-                  3,
-                  12,
-                  1,
-                  9,
-                  7,
-                  3,
-                  2,
-                  12,
-                  27
-                ]
-              },
-              "correlations": null
-            },
             "scatter": null
           }
         },
@@ -10292,44 +10292,28 @@
     },
     "data_definition": {
       "columns": {
-        "BTC Price": {
-          "column_name": "BTC Price",
-          "column_type": "num"
-        },
-        "ETH Price": {
-          "column_name": "ETH Price",
-          "column_type": "num"
-        },
-        "BTC Low": {
-          "column_name": "BTC Low",
-          "column_type": "num"
-        },
-        "JNJ Price": {
-          "column_name": "JNJ Price",
-          "column_type": "num"
-        },
-        "Crude Oil Price": {
-          "column_name": "Crude Oil Price",
-          "column_type": "num"
-        },
-        "BTC High": {
-          "column_name": "BTC High",
-          "column_type": "num"
-        },
-        "Gold Price": {
-          "column_name": "Gold Price",
+        "BTC Previous Close": {
+          "column_name": "BTC Previous Close",
           "column_type": "num"
         },
         "MSFT Price": {
           "column_name": "MSFT Price",
           "column_type": "num"
         },
+        "BTC High": {
+          "column_name": "BTC High",
+          "column_type": "num"
+        },
+        "ETH Price": {
+          "column_name": "ETH Price",
+          "column_type": "num"
+        },
         "BTC Open": {
           "column_name": "BTC Open",
           "column_type": "num"
         },
-        "BTC Previous Close": {
-          "column_name": "BTC Previous Close",
+        "Gold Price": {
+          "column_name": "Gold Price",
           "column_type": "num"
         },
         "JPM Price": {
@@ -10340,13 +10324,21 @@
           "column_name": "XOM Price",
           "column_type": "num"
         },
-        "date": {
-          "column_name": "date",
-          "column_type": "cat"
+        "BTC Low": {
+          "column_name": "BTC Low",
+          "column_type": "num"
         },
-        "Sentiment Article 3": {
-          "column_name": "Sentiment Article 3",
-          "column_type": "cat"
+        "Crude Oil Price": {
+          "column_name": "Crude Oil Price",
+          "column_type": "num"
+        },
+        "JNJ Price": {
+          "column_name": "JNJ Price",
+          "column_type": "num"
+        },
+        "BTC Price": {
+          "column_name": "BTC Price",
+          "column_type": "num"
         },
         "Sentiment Article 2": {
           "column_name": "Sentiment Article 2",
@@ -10354,6 +10346,14 @@
         },
         "Sentiment Article 1": {
           "column_name": "Sentiment Article 1",
+          "column_type": "cat"
+        },
+        "date": {
+          "column_name": "date",
+          "column_type": "cat"
+        },
+        "Sentiment Article 3": {
+          "column_name": "Sentiment Article 3",
           "column_type": "cat"
         }
       },
