@@ -46,6 +46,7 @@ yfinance = "^0.2.40"
 beautifulsoup4 = "^4.12.3"
 transformers = "^4.41.1"
 torch = "^2.3.0"
+tensorflow-intel = "^2.16.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.1.1"
@@ -65,3 +66,8 @@ get_raw_article = "src.data.get_raw_article_data:main"
 preprocess_article = "src.data.preproces_article_data:main"
 merge_data = "src.data.merge_data:main"
 test_data = "src.data.test_data:main"
+split_data = "src.data.split_data:main"
+
+
+train_multi_model = "src.model.train_multi_model:main"
+evaluate_model = "src.model.evaluate_model:main"

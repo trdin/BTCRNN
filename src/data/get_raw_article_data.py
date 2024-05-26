@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 
 def main():
-    btc_info = yf.Ticker("BTC")
+    btc_info = yf.Ticker("BTC-USD")
     news = btc_info.news
 
     # Extract top 3 articles

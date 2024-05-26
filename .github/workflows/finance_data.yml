@@ -14,6 +14,7 @@ concurrency:
 
 env:
   FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+  FINANCE_URL: ${{secrets.FINANCE_URL}}
 
 jobs:
   
@@ -98,7 +99,10 @@ jobs:
       - name: New refrenece data
         run: |
             cp data/processed/current_data.csv data/processed/reference_data.csv
-    
+
+      - name: Split data
+        run: |
+          poetry run split_data
       
       - name: Add data to DVC
         run: |
