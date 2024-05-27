@@ -19,6 +19,8 @@ import tf2onnx
 from mlflow.models import infer_signature
 import onnxruntime as ort
 
+from tensorflow_model_optimization.quantization.keras import quantize_annotate_layer, quantize_apply
+
 import src.enviorment_variables as env
 
 
@@ -81,8 +83,10 @@ def build_lstm_model(input_shape):
     model = Sequential()
     model.add(LSTM(units=32, return_sequences=True, input_shape=input_shape))
     model.add(LSTM(units=32))
-    model.add(Dense(units=16, activation='relu'))
-    model.add(Dense(units=1))
+    model.add(quantize_annotate_layer(Dense(32, activation='relu')))
+    model.add(quantize_annotate_layer(Dense(1)))
+
+    model = quantize_apply(model)
 
     return model
 
