@@ -27,9 +27,11 @@ def insert_prediciton(model_name, data):
 
 
 def get_predictions_by_date(collection, start_date, end_date):
+
+    print(f"Fetching predictions from {start_date} to {end_date}")  
     try:
         predictions = collection.find({
-            'date': {
+            'timestamp': {
                 '$gte': datetime.combine(start_date, datetime.min.time()), 
                 '$lte': datetime.combine(end_date, datetime.max.time())
             }
@@ -39,11 +41,13 @@ def get_predictions_by_date(collection, start_date, end_date):
         print(f"An error occurred while fetching predictions: {e}")
 
 def preditcions_today(model_name):
+    
     try:
         client = MongoClient(uri, server_api=ServerApi('1'))
         if client:
             db = client.get_database('btcrnn')
             collection = db.get_collection(model_name)
+            print(collection)
             today = date.today()
             start_of_day = datetime.combine(today, datetime.min.time())
             end_of_day = datetime.combine(today, datetime.max.time())

@@ -79,7 +79,7 @@ def get_btc():
 def get_model():
     predictions, timestamp = pred.predict_multi()
     db.insert_prediciton("multi", {'price': float(predictions[0][0]),
-                     'timestamp': timestamp.strftime("%Y-%m-%d %H:%M:%S")})
+                     'timestamp': timestamp})
     return jsonify([{'price': float(predictions[0][0]),
                      'timestamp': timestamp.strftime("%Y-%m-%d %H:%M:%S")}])
 
