@@ -11,8 +11,13 @@ import dagshub.auth
 import dagshub
 import datetime
 import subprocess
+import csv
+import json
+from datetime import datetime, timedelta
+import src.database.connector as db
 
 
+last_task_time = None
 
 def dowload_models():
     print("###############--Downloading models--##############")
@@ -22,43 +27,65 @@ def dowload_models():
     btc_scaler = mc.download_scaler("multi", "btc_scaler", "production")
 
     joblib.dump(btc_scaler, os.path.join(station_dir, 'btc_scaler.joblib'))
+
+def task():
+    global last_task_time
+    print("Running scheduled task... ########")
+    # Run git pull
+    subprocess.run(["git", "pull"]) #git pull -X theirs
+    # Run dvc pull
+    subprocess.run(["dvc", "pull", "-r", "origin", "--force"])
+    # Update the last task time
+    last_task_time = datetime.now()
+
+def schedule_task():
+    global last_task_time
+    if last_task_time is None or (datetime.now() - last_task_time).total_seconds() > 1200:  # 20 minutes in seconds
+        task()
+
+def get_bitcoin_prices_with_timestamp(filename):
+    # Get today's date in UTC
+    today = datetime.utcnow().date()
+    # Calculate yesterday's date in UTC
+    yesterday = today - timedelta(days=1)
+    # Initialize a dictionary to store Bitcoin prices with timestamps
+    bitcoin_prices_with_timestamp = []
+
+    with open(filename, mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            # Convert date string to datetime object in UTC
+            date = datetime.strptime(row['date'], '%Y-%m-%d %H:%M:%S').date()
+            # Check if the date is within the range of yesterday to today
+            if yesterday <= date <= today:
+                bitcoin_prices_with_timestamp.append({
+                    'timestamp': row['date'],
+                    'price': float(row['BTC Price'])
+                })
+
+    return bitcoin_prices_with_timestamp
         
-
-def predict(data):
-    try:
-        required_features = ['date','available_bike_stands', 'temperature', 'relative_humidity',
-             'apparent_temperature', 'dew_point', 'precipitation_probability',
-               'surface_pressure']
-        for obj in data:
-            for feature in required_features:
-                if feature not in obj:
-                    return {'error': f'Missing feature: {feature}'}, 400
-
-        prediction = pred.predict(data)
-
-        return {'prediction': prediction.tolist()}
-    except Exception as e:
-        return {'error': str(e)}, 400
 
 app = Flask(__name__)
 CORS(app) 
 
-@app.route('/predict', methods=['POST'])
-def predict_air():
-    data = request.get_json()
-    result = predict(data)
-    return jsonify(result)
+@app.route('/btc', methods=['GET'])
+def get_btc():
+    filename = 'data/processed/finance_full_data.csv'
+    bitcoin_prices_with_timestamp = get_bitcoin_prices_with_timestamp(filename)
+    return jsonify(bitcoin_prices_with_timestamp)
 
 @app.route('/predict', methods=['GET'])
 def get_model():
+    predictions, timestamp = pred.predict_multi()
+    db.insert_prediciton("multi", {'price': float(predictions[0][0]),
+                     'timestamp': timestamp.strftime("%Y-%m-%d %H:%M:%S")})
+    return jsonify([{'price': float(predictions[0][0]),
+                     'timestamp': timestamp.strftime("%Y-%m-%d %H:%M:%S")}])
 
-    
-    predictions = pred.predict_multi()
-    #db.insert_prediciton(f"station_{station_id}", {'predictions': predictions, "date": datetime.datetime.now()})
-    return jsonify({'prediction': float(predictions[0][0])})
-
-    
-    
+@app.before_request
+def before_request():
+    schedule_task()
 
 
 def main():
@@ -68,7 +95,9 @@ def main():
     mlflow.set_tracking_uri(env.mlflow_tracking_uri)
     dowload_models()
 
+
     app.run(host='0.0.0.0', port=3001)
+    
 
 if __name__ == '__main__':
     main()

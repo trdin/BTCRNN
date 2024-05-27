@@ -13,11 +13,11 @@ uri = f"mongodb+srv://{os.getenv('MONGO_USERNAME')}:{os.getenv('MONGO_PASSWORD')
 
 
 
-def insert_prediciton(collection_name, data):
+def insert_prediciton(model_name, data):
     try:
         client = MongoClient(uri, server_api=ServerApi('1'))
         if client:
-            collection = client.get_database('stations').get_collection(collection_name)
+            collection = client.get_database('btcrnn').get_collection(model_name)
             collection.insert_one(data)
 
     except DuplicateKeyError:
@@ -38,12 +38,12 @@ def get_predictions_by_date(collection, start_date, end_date):
     except Exception as e:
         print(f"An error occurred while fetching predictions: {e}")
 
-def preditcions_today(station_name):
+def preditcions_today(model_name):
     try:
         client = MongoClient(uri, server_api=ServerApi('1'))
         if client:
-            db = client.get_database('stations')
-            collection = db.get_collection(station_name)
+            db = client.get_database('btcrnn')
+            collection = db.get_collection(model_name)
             today = date.today()
             start_of_day = datetime.combine(today, datetime.min.time())
             end_of_day = datetime.combine(today, datetime.max.time())

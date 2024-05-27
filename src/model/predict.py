@@ -16,6 +16,12 @@ def predict_multi(windowsize=8):
 
     data = pd.read_csv("./data/processed/finance_full_data.csv")
 
+    last_date = data["date"].iloc[-1]
+
+    last_timestamp = pd.to_datetime(last_date)
+
+
+
     learn_features, all_data, pipeline = pld.prepare_data(
         "./data/processed/finance_full_data.csv"
     )
@@ -43,4 +49,6 @@ def predict_multi(windowsize=8):
     print("###############--Predictions--##############")
     print(predicitons)
 
-    return predicitons
+    last_timestamp = last_timestamp + timedelta(minutes=20)
+
+    return predicitons, last_timestamp
