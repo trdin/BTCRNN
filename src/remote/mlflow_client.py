@@ -100,7 +100,7 @@ def save_pipline(pipeline, mode, client= mlflow.MlflowClient()):
         "station_name": mode,
     }
 
-    station_model = mlflow.sklearn.log_model(
+    pipeline = mlflow.sklearn.log_model(
             sk_model=pipeline,
             artifact_path=f"models/{mode}/pipeline",
             registered_model_name=f"pipeline={mode}",
@@ -109,8 +109,8 @@ def save_pipline(pipeline, mode, client= mlflow.MlflowClient()):
     
     model_version = client.create_model_version(
             name=f"pipeline={mode}",
-            source=station_model.model_uri,
-            run_id=station_model.run_id
+            source=pipeline.model_uri,
+            run_id=pipeline.run_id
         )
 
     client.transition_model_version_stage(
@@ -118,6 +118,29 @@ def save_pipline(pipeline, mode, client= mlflow.MlflowClient()):
         version=model_version.version,
         stage="staging",
     )
+
+def download_pipeline(mode, stage):
+    model_name = f"pipeline={mode}"
+
+    try:
+        client = mlflow.MlflowClient()
+        pipeline = mlflow.sklearn.load_model( client.get_latest_versions(name=model_name, stages=[stage])[0].source)
+
+        return pipeline
+    except IndexError:
+        print(f"Error downloading {stage}, {model_name}")
+        return None
+    
+def download_scaler(mode, scaler_type, stage):
+    scaler_name = f"{scaler_type}={mode}"
+
+    try:
+        client = mlflow.MlflowClient()
+        scaler = mlflow.sklearn.load_model(client.get_latest_versions(name=scaler_name, stages=[stage])[0].source)
+        return scaler
+    except IndexError:
+        print(f"Error downloading {stage}, {scaler_name}")
+        return None
 
 def prod_model_save(mode):
 
@@ -129,6 +152,10 @@ def prod_model_save(mode):
 
         btc_scaler_version = client.get_latest_versions(name=f"btc_scaler={mode}", stages=["staging"])[0].version
         client.transition_model_version_stage(f"btc_scaler={mode}", btc_scaler_version, "production")
+
+
+        pipeline= client.get_latest_versions(name=f"pipeline={mode}", stages=["staging"])[0].version
+        client.transition_model_version_stage(f"pipeline={mode}", pipeline, "production")
         
         """ other_scaler_version = client.get_latest_versions(name= f"other_scaler={mode}", stages=["staging"])[0].version
         client.transition_model_version_stage(f"other_scaler={mode}", other_scaler_version, "production") """

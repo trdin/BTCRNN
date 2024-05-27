@@ -22,7 +22,7 @@ import onnxruntime as ort
 import src.enviorment_variables as env
 
 
-def mlflow_save_onnx(model, mode, client, window_size, feature_number, X_test):
+def mlflow_save_onnx(model, mode, client,  feature_number,window_size, X_test):
     model.output_names = ["output"]
 
     input_signature = [
@@ -164,10 +164,11 @@ def train(data_path, mode,windowsize = 8 ):
 
     X_final, y_final = create_multivariate_dataset_with_steps(train_final_normalized, look_back, step)
 
-    
+    print("###############SHAPE################")
+    print(f"X_train shape: {X_final.shape}")
     X_final = X_final.reshape(X_final.shape[0], X_final.shape[2], X_final.shape[1])
 
-
+    print("###############SHAPE################")
     print(f"X_train shape: {X_final.shape}")
     
 
@@ -192,7 +193,7 @@ def train(data_path, mode,windowsize = 8 ):
     mlflow.log_param("batch_size", batch_size)
     mlflow.log_param("train_dataset_size", len(X_final))
     #mc.mlflow_save_model(lstm_model_final, station_name, client)
-    mlflow_save_onnx(lstm_model_final, mode, client, windowsize, 8, X_final)
+    mlflow_save_onnx(lstm_model_final, mode, client, 8, 15, X_final)
 
 
     station_directory = './models/' + mode

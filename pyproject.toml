@@ -72,3 +72,5 @@ split_data = "src.data.split_data:main"
 
 train_multi_model = "src.model.train_multi_model:main"
 evaluate_model = "src.model.evaluate_model:main"
+
+serve = "src.serve.serve:main"
