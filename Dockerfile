@@ -11,7 +11,7 @@ RUN pip install poetry==1.8.2
 COPY poetry.lock pyproject.toml /app/
 
 # Install dependencies using Poetry
-RUN poetry install --no-interaction --no-root --no-dev --no-cache
+RUN poetry install --no-interaction --no-root --only main --no-cache
 
 # Copy the rest of the application code
 COPY . /app
