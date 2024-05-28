@@ -96,7 +96,7 @@ def get_price(client, symbol):
             print("retlying...")
             retry_count += 1
             time.sleep(60)  # Wait for 60 seconds before retrying, to reset the limit
-
+ 
     if(symbol  == 'BTC-USD'):
         bttfailsafe = failsafe(symbol)
         return btcOtherDataFailSafe(symbol, bttfailsafe['c'])

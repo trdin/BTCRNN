@@ -11,7 +11,7 @@ function Evaluation() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/eval");
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/eval`);
         const data = response.data.metrics;
         setMetricsData(data);
 

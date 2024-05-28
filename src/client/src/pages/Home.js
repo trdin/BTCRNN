@@ -12,11 +12,11 @@ function Home() {
     const fetchData = async () => {
       try {
         // Fetch BTC data
-        const btcResponse = await axios.get("http://localhost:3001/btc");
+        const btcResponse = await axios.get(`${process.env.REACT_APP_API_URL}/btc`);
         const btcData = btcResponse.data;
 
         // Fetch prediction data
-        const predictResponse = await axios.get("http://localhost:3001/predict");
+        const predictResponse = await axios.get(`${process.env.REACT_APP_API_URL}/predict`);
         const predictData = predictResponse.data;
 
         setPredictionData(predictData);
