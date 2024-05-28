@@ -10,11 +10,22 @@ function DataQuality() {
         <iframe
           src="https://iis-validations.netlify.app/"
           title="Data Validation"
-          className="w-full h-[600px]"
+          className="w-full h-[400px] md:h-[600px] rounded-md shadow-md"
           frameBorder="0"
         ></iframe>
       </div>
-      <p className="text-gray-700">This is the Data Quality page.</p>
+      
+      {/* Data Test iframe */}
+      <div className="bg-gray-100 p-4 rounded-md shadow-md mb-6">
+        <h3 className="text-lg font-bold mb-2">Data Test</h3>
+        <iframe
+          src="https://datatestbtcrnn.netlify.app/"
+          title="Data Test"
+          className="w-full h-[400px] md:h-[600px] rounded-md shadow-md"
+          frameBorder="0"
+        ></iframe>
+      </div>
+
     </div>
   );
 }
