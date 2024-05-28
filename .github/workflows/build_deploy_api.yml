@@ -61,10 +61,12 @@ jobs:
 
          # Step 4 - Build the Docker image and push it to the container registry we previously authenticated with.
          - name: Build and push Docker image
-           uses: docker/setup-buildx-action@v1
+           uses: docker/build-push-action@v5
            with:
-              buildkitd-flags: --debug
-              driver-opts: image=moby/buildkit:v0.9.1 
+              context: .
+              push: true
+              tags: ${{ steps.meta.outputs.tags }}
+              labels: ${{ steps.meta.outputs.labels }}
 
          # Step 5 - Deploy the image to an existing Northflank service or job. 
          - name: Deploy to Northflank
