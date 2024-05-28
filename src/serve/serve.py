@@ -32,12 +32,31 @@ def dowload_models():
 def task():
     global last_task_time
     print("Running scheduled task... ########")
-    # Run git pull
-    subprocess.run(["git", "pull"]) #git pull -X theirs
-    # Run dvc pull
-    subprocess.run(["dvc", "pull", "-r", "origin", "--force"])
+    
+    # Reset any local changes
+    try:
+        subprocess.run(["git", "reset", "--hard", "origin/main"], check=True)
+        print("Git reset completed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error during git reset: {e}")
+    
+    # Run git pull to fetch the latest changes
+    try:
+        subprocess.run(["git", "pull", "origin", "main"], check=True)
+        print("Git pull completed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error during git pull: {e}")
+    
+    # Run dvc pull with --force
+    try:
+        subprocess.run(["dvc", "pull", "-r", "origin", "--force"], check=True)
+        print("DVC pull completed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error during dvc pull: {e}")
+    
     # Update the last task time
     last_task_time = datetime.now()
+    print(f"Task completed at {last_task_time}")
 
 def schedule_task():
     global last_task_time
