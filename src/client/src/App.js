@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Link
+  Link, Navigate
 } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
@@ -27,7 +27,8 @@ function App() {
         <div className="p-4">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/admin" element={<AdminPanel />} />
+            <Route path="/admin" element={<Navigate to="/admin/evaluation" />} />
+            <Route path="/admin/*" element={<AdminPanel />} />
           </Routes>
         </div>
       </div>

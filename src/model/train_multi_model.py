@@ -24,6 +24,18 @@ from tensorflow_model_optimization.quantization.keras import quantize_annotate_l
 import src.enviorment_variables as env
 
 
+def build_lstn_model(input_shape):
+    model = Sequential()
+    model.add(LSTM(units=32, return_sequences=True, input_shape=input_shape))
+    model.add(LSTM(units=32))
+    model.add(quantize_annotate_layer(Dense(32, activation='relu')))
+    model.add(quantize_annotate_layer(Dense(1)))
+
+    model = quantize_apply(model)
+
+    return model
+
+
 def mlflow_save_onnx(model, mode, client,  feature_number,window_size, X_test):
     model.output_names = ["output"]
 
@@ -83,10 +95,8 @@ def build_lstm_model(input_shape):
     model = Sequential()
     model.add(LSTM(units=32, return_sequences=True, input_shape=input_shape))
     model.add(LSTM(units=32))
-    model.add(quantize_annotate_layer(Dense(32, activation='relu')))
-    model.add(quantize_annotate_layer(Dense(1)))
-
-    model = quantize_apply(model)
+    model.add(Dense(32, activation='relu'))
+    model.add(Dense(1))
 
     return model
 

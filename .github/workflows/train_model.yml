@@ -12,9 +12,6 @@ env:
 permissions:
   contents: read
 
-concurrency:
-    group: data-processing
-    cancel-in-progress: false
 
 jobs:
   train_model:

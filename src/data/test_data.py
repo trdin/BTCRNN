@@ -48,7 +48,7 @@ def main():
 
 
 
-    tests.save_html("reports/sites/stability_tests.html")
+    tests.save_html("reports/sites/index.html")
 
 if __name__ == "__main__":
     main()
