@@ -49,7 +49,7 @@ def task():
     
     # Run dvc pull with --force
     try:
-        subprocess.run(["dvc", "pull", "-r", "origin", "--force"], check=True)
+        subprocess.run(["poetry", "run", "dvc", "pull", "-r", "origin", "--force"], check=True)
         print("DVC pull completed successfully.")
     except subprocess.CalledProcessError as e:
         print(f"Error during dvc pull: {e}")
