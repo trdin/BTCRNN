@@ -53,7 +53,7 @@ jobs:
       - run: poetry install --no-interaction --no-root --no-dev
         if: steps.cache-deps.outputs.cache-hit != 'true'
 
-      - run: poetry install --no-interaction --no-dev
+      - run: poetry install --no-interaction --no-dev --with art
 
       - name: Setup DVC
         uses: iterative/setup-dvc@v1
