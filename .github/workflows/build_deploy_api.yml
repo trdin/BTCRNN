@@ -65,10 +65,6 @@ jobs:
            with:
               buildkitd-flags: --debug
               driver-opts: image=moby/buildkit:v0.9.1
-              context: .
-              push: true
-              tags: ${{ steps.meta.outputs.tags }}
-              labels: ${{ steps.meta.outputs.labels }}
 
          # Step 5 - Deploy the image to an existing Northflank service or job. 
          - name: Deploy to Northflank
