@@ -80,3 +80,5 @@ evaluate_model = "src.model.evaluate_model:main"
 serve = "src.serve.serve:main"
 
 test_pred = "src.model_test.test_predictions:main"
+
+test_finance_api = "src.test_api.test_api:main"

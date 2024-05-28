@@ -2,7 +2,7 @@ name: Fetch and Process Article Data
 
 on:
   schedule:
-    - cron: '0 */5 * * *'  # Run every 5 hours
+    - cron: '0 */3 * * *'  # Run every 5 hours
   workflow_dispatch:
 
 
@@ -14,8 +14,53 @@ permissions:
   contents: read
 
 jobs:
+
+  test_datasource:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: 'main'
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: cache poetry install
+        uses: actions/cache@v2
+        with:
+          path: ~/.local
+          key: poetry-1.8.2
+
+      - uses: snok/install-poetry@v1
+        with:
+          version: 1.8.2
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+
+      - name: cache deps
+        id: cache-deps
+        uses: actions/cache@v2
+        with:
+          path: .venv
+          key: pydeps-${{ hashFiles('**/poetry.lock') }}
+
+      - run: poetry install --no-interaction --no-root --without dev --with art
+        if: steps.cache-deps.outputs.cache-hit != 'true'
+
+      - run: poetry install --no-interaction --no-dev --with art
+              
+      - name: Test finance API
+        run: poetry run test_finance_api
+
   
-  article_data:
+  fetch_article_data:
+    needs: test_datasource
     runs-on: ubuntu-latest
 
     permissions:
@@ -76,6 +121,79 @@ jobs:
 
       - name: Fetch article data
         run: poetry run get_raw_article
+              
+      - name: Add data to DVC
+        run: |
+          poetry run dvc add data
+
+      - name: DVC push
+        run: |
+          poetry run dvc push -r origin
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update data dvc
+
+
+  process_article_data:
+    needs: fetch_article_data
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: 'main'
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: cache poetry install
+        uses: actions/cache@v2
+        with:
+          path: ~/.local
+          key: poetry-1.8.2
+
+      - uses: snok/install-poetry@v1
+        with:
+          version: 1.8.2
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+
+      - name: cache deps
+        id: cache-deps
+        uses: actions/cache@v2
+        with:
+          path: .venv
+          key: pydeps-${{ hashFiles('**/poetry.lock') }}
+
+      - run: poetry install --no-interaction --no-root --without dev --with art
+        if: steps.cache-deps.outputs.cache-hit != 'true'
+
+      - run: poetry install --no-interaction --no-dev --with art
+
+      - name: Setup DVC
+        uses: iterative/setup-dvc@v1
+        with:
+          version: '3.48.4'
+
+      - name: Setup Dagshub
+        run: |
+          poetry run dvc remote modify origin endpointurl https://dagshub.com/trdin.peter10/BTCRNN.s3
+          poetry run dvc remote modify origin --local access_key_id ${{ secrets.ACCESS_KEY_ID }}
+          poetry run dvc remote modify origin --local secret_access_key ${{ secrets.SECRET_ACCESS_KEY }}
+
+      - name: Pull data
+        run: |
+          poetry run dvc pull -r origin
+
+      - name: Unprotect
+        run: |
+          poetry run dvc unprotect data
               
       - name: Prepare article data
         run: poetry run preprocess_article
