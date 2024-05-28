@@ -202,9 +202,9 @@ def get_prodeval():
 
     return jsonify(response)
 
-@app.before_request
+""" @app.before_request
 def before_request():
-    schedule_task()
+    schedule_task() """
 
 
 def main():
